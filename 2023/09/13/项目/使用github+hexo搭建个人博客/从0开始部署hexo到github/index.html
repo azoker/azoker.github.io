@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://azoker.github.io/images/image-20230913184655426.png">
 <meta property="og:image" content="https://azoker.github.io/images/image-20230913212428636.png">
 <meta property="article:published_time" content="2023-09-13T13:32:27.000Z">
-<meta property="article:modified_time" content="2023-10-12T11:09:33.388Z">
+<meta property="article:modified_time" content="2023-10-14T08:28:12.039Z">
 <meta property="article:author" content="azoker">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="github">
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1.2k 字
         
       </span>
     
@@ -333,7 +333,11 @@
 
 <p><img src="/../../../images/image-20230913212428636.png" srcset="/img/loading.gif" lazyload></p>
 <p>然后在git运行（hexo clean 一定要运行一下，不然可能上传不了）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean // 这里不能简写哦，反正我的不行<br>hexo deploy // 简写 hexo d<br></code></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">如果报错</span><br>ERROR Deployer not found: git<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">安装插件</span><br>npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean # 这里不能简写哦，反正我的不行<br>hexo deploy # 简写 hexo d<br></code></pre></td></tr></table></figure>
 
 <p>如果加速了也无法连接github，比较玄学，重新启动git试试，github服务器经常抽风，不行就多来几次</p>
 
