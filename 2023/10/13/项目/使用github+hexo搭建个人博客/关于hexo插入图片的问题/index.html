@@ -16,20 +16,20 @@
   <meta name="author" content="azoker">
   <meta name="keywords" content="">
   
-    <meta name="description" content="关于这个问题已经很久远了，现在是我复盘和总结一下这个问题  这个问题想必已经困扰了hexo新手很久了，我回忆一下我那时的情况： 一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件  npm install hexo-renderer-marked  # 然后在config.yml更改配置 post_asset_folder: true marked:   pre">
+    <meta name="description" content="关于这个问题已经很久远了，现在是我复盘和总结一下这个问题  这个问题想必已经困扰了hexo新手很久了，我回忆一下我那时的情况： 一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件：  npm install hexo-renderer-marked  # 然后在config.yml更改配置 post_asset_folder: true marked:   pr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于hexo插入图片的问题">
 <meta property="og:url" content="https://azoker.github.io/2023/10/13/%E9%A1%B9%E7%9B%AE/%E4%BD%BF%E7%94%A8github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%B3%E4%BA%8Ehexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="witaj">
-<meta property="og:description" content="关于这个问题已经很久远了，现在是我复盘和总结一下这个问题  这个问题想必已经困扰了hexo新手很久了，我回忆一下我那时的情况： 一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件  npm install hexo-renderer-marked  # 然后在config.yml更改配置 post_asset_folder: true marked:   pre">
+<meta property="og:description" content="关于这个问题已经很久远了，现在是我复盘和总结一下这个问题  这个问题想必已经困扰了hexo新手很久了，我回忆一下我那时的情况： 一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件：  npm install hexo-renderer-marked  # 然后在config.yml更改配置 post_asset_folder: true marked:   pr">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://azoker.github.io/images/image-20231013105859262.png">
+<meta property="og:image" content="https://azoker.github.io/image/image-20231013105859262.png">
 <meta property="article:published_time" content="2023-10-13T02:34:25.000Z">
-<meta property="article:modified_time" content="2023-10-14T03:22:56.843Z">
+<meta property="article:modified_time" content="2023-11-08T10:21:59.469Z">
 <meta property="article:author" content="azoker">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://azoker.github.io/images/image-20231013105859262.png">
+<meta name="twitter:image" content="https://azoker.github.io/image/image-20231013105859262.png">
   
   
   
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          657 字
+          645 字
         
       </span>
     
@@ -279,29 +279,32 @@
 <p>关于这个问题已经很久远了，现在是我复盘和总结一下这个问题</p>
 </blockquote>
 <p>这个问题想必已经困扰了hexo新手很久了，我回忆一下我那时的情况：</p>
-<p>一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件</p>
+<p>一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件：</p>
 <ul>
-<li><pre><code class="yml">npm install hexo-renderer-marked
+<li><div class="code-wrapper"><pre><code class="yml">npm install hexo-renderer-marked
 
 # 然后在config.yml更改配置
 post_asset_folder: true
 marked:
   prependRoot: true
   postAsset: true
-<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey"><br>- ```yml<br><span class="hljs-title">  npm install https:</span>//github.com/CodeFalling/hexo-asset-image<br></code></pre></td></tr></table></figure>
+<pre><code class="hljs dockerfile">
+- ```<span class="hljs-keyword">shell</span><span class="language-bash"></span>
+<span class="language-bash">  npm install https://github.com/CodeFalling/hexo-asset-image</span></code></pre></div>
 </code></pre>
 </li>
 </ul>
 <p>装好这两个插件之后，我在source目录下新建了一个image文件夹，我把博客所有的图片都放到image里面，因为这样可以很好的适配typora，引入图片的格式如下：</p>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs scss">!<span class="hljs-selector-attr">[图片描述]</span>(检索图片的相对路径)<br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre><code class="hljs md">![<span class="hljs-string">图片描述</span>](<span class="hljs-link">检索图片的相对路径</span>)</code></pre></div>
 
 <p>如何与typora相结合呢？</p>
-<p>首先按照我这样设置typora：<br><img src="/../../../images/image-20231013105859262.png" srcset="/img/loading.gif" lazyload></p>
-<p>当你每次插入图片时，直接就使用相对路径了，这样一石二鸟，既可以在typora显示图片，在部署的时候也能显示图片，非常方便</p>
-<p><strong>最后提一点，以上方法是你不使用主题的情况</strong>，如果你使用主题的话，直接新建image文件夹，把图片放进去就好了，只是要在文章里面用相对路径引用出来就好了</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<p>首先按照我这样设置typora：</p>
+<p><img src="/../../../image/image-20231013105859262.png" srcset="/img/loading.gif" lazyload></p>
+<p>当你每次插入图片时，直接就使用相对路径了，这样一石二鸟，既可以在typora显示图片，在部署的时候也能显示图片，非常方便。</p>
+<p><strong>最后提一点，以上方法是你不使用主题的情况</strong>，如果你使用主题的话，直接新建image文件夹，把图片放进去就好了，只是要在文章里面用相对路径引用出来就好了。</p>
+<div class="code-wrapper"><pre><code class="hljs yml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span></code></pre></div>
 
-<p>在config.yml里面把这个打开还能在生成文章的同时自动生成文件夹，你也可以把图片放在里面，这个就仁者见仁智者见智了，当然，主题不一样操作还是有细节不同，我用的是3-hexo主题</p>
+<p>在config.yml里面把这个打开还能在生成文章的同时自动生成文件夹，你也可以把图片放在里面，这个就仁者见仁智者见智了，当然，主题不一样操作还是有细节不同。</p>
 
                 
               </div>
@@ -309,6 +312,34 @@ marked:
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%A1%B9%E7%9B%AE/" class="category-chain-item">项目</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E9%A1%B9%E7%9B%AE/%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BAhexo-github%E5%8D%9A%E5%AE%A2/" class="category-chain-item">快速构建hexo+github博客</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
     <div class="post-meta">
@@ -381,7 +412,7 @@ marked:
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/12/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="python环境配置">
+                      <a href="/2023/10/12/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="python环境配置">
                         <span class="hidden-mobile">python环境配置</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -485,7 +516,7 @@ marked:
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       by azoker 
     </div>
   
   

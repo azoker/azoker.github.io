@@ -4,6 +4,182 @@
   
   
   <entry>
+    <title>tomcat环境配置</title>
+    <link href="/2023/11/06/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/tomcat%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/11/06/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/tomcat%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<h1 id="tomcat下载"><a href="#tomcat下载" class="headerlink" title="tomcat下载"></a>tomcat下载</h1><ul><li><a href="https://www.123pan.com/s/lgVZVv-LvRad.html">tomcat8</a></li><li><a href="https://www.123pan.com/s/lgVZVv-5vRad.html">tomcat9</a></li><li><a href="https://www.123pan.com/s/lgVZVv-qvRad.html">tomcat10</a></li></ul><h1 id="tomcat启动"><a href="#tomcat启动" class="headerlink" title="tomcat启动"></a>tomcat启动</h1><p>将压缩包解压到你自定义的目录下，找到bin文件夹，找到startup.bat文件，双击启动</p><p>这时浏览器访问：</p><p><a href="localhost:8080">localhost:8080</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>环境配置</tag>
+      
+      <tag>tomcat</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>JSP简介</title>
+    <link href="/2023/11/06/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/jsp/JSP%E7%AE%80%E4%BB%8B/"/>
+    <url>/2023/11/06/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/jsp/JSP%E7%AE%80%E4%BB%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="什么是Java-Server-Pages"><a href="#什么是Java-Server-Pages" class="headerlink" title="什么是Java Server Pages?"></a>什么是Java Server Pages?</h1><p>JSP全称Java Server Pages，是一种动态网页开发技术。它使用JSP标签在HTML网页中插入Java代码。</p><p>JSP是一种Java servlet，主要用于实现Java web应用程序的用户界面部分。网页开发者们通过结合HTML代码、XHTML代码、XML元素以及嵌入JSP操作和命令来编写JSP。</p><p>JSP通过网页表单获取用户输入数据、访问数据库及其他数据源，然后动态地创建网页。</p><p>JSP标签有多种功能，比如访问数据库、记录用户选择信息、访问JavaBeans组件等，还可以在不同的网页中传递控制信息和共享信息。</p><h1 id="JSP开发环境搭建"><a href="#JSP开发环境搭建" class="headerlink" title="JSP开发环境搭建"></a>JSP开发环境搭建</h1><p>JSP的环境非常简单，只需要你有Java环境，以及服务器环境就可以了。</p><p>以下是我的两篇技术文章：</p><p><a href="/2023/09/12/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Java%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Java环境</a></p><p><a href="">TomCat服务器</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>后端</category>
+      
+      <category>jsp</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>jsp</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>通过idea简单构建Java web项目</title>
+    <link href="/2023/11/04/%E5%B7%A5%E5%85%B7/idea/%E9%80%9A%E8%BF%87idea%E7%AE%80%E5%8D%95%E6%9E%84%E5%BB%BAJava-web%E9%A1%B9%E7%9B%AE/"/>
+    <url>/2023/11/04/%E5%B7%A5%E5%85%B7/idea/%E9%80%9A%E8%BF%87idea%E7%AE%80%E5%8D%95%E6%9E%84%E5%BB%BAJava-web%E9%A1%B9%E7%9B%AE/</url>
+    
+    <content type="html"><![CDATA[<h1 id="1-新建项目"><a href="#1-新建项目" class="headerlink" title="1.新建项目"></a>1.新建项目</h1><p>File -&gt; New -&gt; Project…</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE1.png"></p><h1 id="2-导入web模块"><a href="#2-导入web模块" class="headerlink" title="2.导入web模块"></a>2.导入web模块</h1><p>File -&gt; Project Structure…</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE2.png"></p><p>点击web之后直接点击ok，接下来创建工件，完成之后点击ok</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE3.png"></p><h1 id="3-搭建运行环境"><a href="#3-搭建运行环境" class="headerlink" title="3.搭建运行环境"></a>3.搭建运行环境</h1><p>在项目首页找到Current File</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE4.png"></p><p>点击加号找到tomcat（注意tomcat和tomcat EE是不同的东西）</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE5.png"></p><p>接下来配置tomcat</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE6.png"></p><p>之后要把删除 “ test_war_exploded ”，然后就构建成功了</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE7.png"></p><h1 id="4-添加tomcat依赖库"><a href="#4-添加tomcat依赖库" class="headerlink" title="4.添加tomcat依赖库"></a>4.添加tomcat依赖库</h1><p>File -&gt; New -&gt; Project…</p><p><img src="/../../../imgs/idea%E6%9E%84%E5%BB%BAweb%E9%A1%B9%E7%9B%AE8.png"></p><p>之后选择tomcat就ok了</p><h1 id="5-测试"><a href="#5-测试" class="headerlink" title="5.测试"></a>5.测试</h1><p>先创建一个Java类，类名为HelloWorld</p><p>然后参考我的这篇文章：</p><p><a href="/2023/11/03/%E6%8A%80%E6%9C%AF/servlet/Servlet%E5%AE%9E%E4%BE%8B/">HelloWorld</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>工具</category>
+      
+      <category>idea</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>web</tag>
+      
+      <tag>idea</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Servlet表单数据</title>
+    <link href="/2023/11/04/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/servlet/Servlet%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/"/>
+    <url>/2023/11/04/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/servlet/Servlet%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>很多情况下，需要传递一些信息，从浏览器到 Web 服务器，最终到后台程序。浏览器使用两种方法可将这些信息传递到 Web 服务器，分别为 GET 方法和 POST 方法。</p></blockquote><h1 id="GET-方法"><a href="#GET-方法" class="headerlink" title="GET 方法"></a>GET 方法</h1><p>GET 方法向页面请求发送已编码的用户信息。页面和已编码的信息中间用 ? 字符分隔，如下所示：</p><div class="code-wrapper"><pre><code class="hljs dts"><span class="hljs-symbol">http:</span><span class="hljs-comment">//www.test.com/hello?key1=value1&amp;key2=value2</span></code></pre></div><p>GET 方法是默认的从浏览器向 Web 服务器传递信息的方法，它会产生一个很长的字符串，出现在浏览器的地址栏中。如果您要向服务器传递的是密码或其他的敏感信息，请不要使用 GET 方法。GET 方法有大小限制：请求字符串中最多只能有 1024 个字符。</p><p>这些信息使用 QUERY_STRING 头传递，并可以通过 QUERY_STRING 环境变量访问，Servlet 使用 <strong>doGet()</strong> 方法处理这种类型的请求。</p><h1 id="POST-方法"><a href="#POST-方法" class="headerlink" title="POST 方法"></a>POST 方法</h1><p>另一个向后台程序传递信息的比较可靠的方法是 POST 方法。POST 方法打包信息的方式与 GET 方法基本相同，但是 POST 方法不是把信息作为 URL 中 ? 字符后的文本字符串进行发送，而是把这些信息作为一个单独的消息。消息以标准输出的形式传到后台程序，您可以解析和使用这些标准输出。Servlet 使用 doPost() 方法处理这种类型的请求。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>后端</category>
+      
+      <category>servlet</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>servlet</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Servlet实例</title>
+    <link href="/2023/11/03/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/servlet/Servlet%E5%AE%9E%E4%BE%8B/"/>
+    <url>/2023/11/03/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/servlet/Servlet%E5%AE%9E%E4%BE%8B/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>如果对web项目构建不熟悉，可以参考以下文章：</p><p><a href="/2023/11/04/%E5%B7%A5%E5%85%B7/idea/%E9%80%9A%E8%BF%87idea%E7%AE%80%E5%8D%95%E6%9E%84%E5%BB%BAJava-web%E9%A1%B9%E7%9B%AE/">通过idea简单构建Java web项目</a></p></blockquote><h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello,World!"></a>Hello,World!</h1><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-comment">// 导入必需的 java 库</span><span class="hljs-keyword">import</span> java.io.*;<span class="hljs-keyword">import</span> javax.servlet.*;<span class="hljs-keyword">import</span> javax.servlet.http.*;<span class="hljs-comment">// 扩展 HttpServlet 类</span><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> &#123;   <span class="hljs-keyword">private</span> String message;  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> ServletException  &#123;      <span class="hljs-comment">// 执行必需的初始化</span>      message = <span class="hljs-string">&quot;Hello World&quot;</span>;  &#125;  <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doGet</span><span class="hljs-params">(HttpServletRequest request,</span><span class="hljs-params">                    HttpServletResponse response)</span>            <span class="hljs-keyword">throws</span> ServletException, IOException  &#123;      <span class="hljs-comment">// 设置响应内容类型</span>      response.setContentType(<span class="hljs-string">&quot;text/html&quot;</span>);      <span class="hljs-comment">// 实际的逻辑是在这里</span>      <span class="hljs-type">PrintWriter</span> <span class="hljs-variable">out</span> <span class="hljs-operator">=</span> response.getWriter();      out.println(<span class="hljs-string">&quot;&lt;h1&gt;&quot;</span> + message + <span class="hljs-string">&quot;&lt;/h1&gt;&quot;</span>);  &#125;    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">destroy</span><span class="hljs-params">()</span>  &#123;      <span class="hljs-comment">// 什么也不做</span>  &#125;&#125;</code></pre></div><h1 id="Servlet部署"><a href="#Servlet部署" class="headerlink" title="Servlet部署"></a>Servlet部署</h1><p>在<strong>web.xml</strong> 文件中创建以下条目：</p><div class="code-wrapper"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">web-app</span>&gt;</span>          <span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span>        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>HelloWorld<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>HelloWorld<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span>    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet</span>&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-name">servlet-mapping</span>&gt;</span>        <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>HelloWorld<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span>        <span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>/HelloWorld<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span>    <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-mapping</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">web-app</span>&gt;</span></code></pre></div><p>在该文件中可能已经有各种可用的条目，但不要在意。</p><p>之后访问<strong><a href="http://localhost:8080/HelloWorld">http://localhost:8080/HelloWorld</a></strong>。正常情况你会在浏览器看到打印的hello,world!</p><p>在开发中我们不可能只使用一个servlet类，如果每个请求都要在<strong>web.xml</strong>更新映射的话，很影响效率，因此我们可以用Java注解：</p><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-keyword">import</span> javax.servlet.annotation.WebServlet; <span class="hljs-comment">//需要导入的包</span><span class="hljs-meta">@WebServlet(&quot;/HelloWorld&quot;)</span><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> &#123;    <span class="hljs-comment">// 此处省略代码...</span>&#125;</code></pre></div><blockquote><p>网上说xml映射和注解会冲突，我用的tomcat8，貌似并没有遇到这种问题？</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>后端</category>
+      
+      <category>servlet</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>servlet</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Servlet简介</title>
+    <link href="/2023/11/03/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/servlet/Servlet%E7%AE%80%E4%BB%8B/"/>
+    <url>/2023/11/03/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/servlet/Servlet%E7%AE%80%E4%BB%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="What-is-Servlet"><a href="#What-is-Servlet" class="headerlink" title="What is Servlet?"></a>What is Servlet?</h1><p>Java Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器或其他 HTTP 客户端的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。</p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li>Servlet 在 Web 服务器的地址空间内执行。这样它就没有必要再创建一个单独的进程来处理每个客户端请求。</li><li>Servlet 是独立于平台的，因为它们是用 Java 编写的。</li><li>服务器上的 Java 安全管理器执行了一系列限制，以保护服务器计算机上的资源。因此，Servlet 是可信的。</li><li>Java 类库的全部功能对 Servlet 来说都是可用的。它可以通过 sockets 和 RMI 机制与 applets、数据库或其他软件进行交互。</li></ul><h1 id="Servlet的创建方式"><a href="#Servlet的创建方式" class="headerlink" title="Servlet的创建方式"></a>Servlet的创建方式</h1><h2 id="实现servlet接口"><a href="#实现servlet接口" class="headerlink" title="实现servlet接口"></a>实现servlet接口</h2><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-comment">//Servlet的生命周期:从Servlet被创建到Servlet被销毁的过程</span><span class="hljs-comment">//一次创建，到处服务</span><span class="hljs-comment">//一个Servlet只会有一个对象，服务所有的请求</span><span class="hljs-comment">/*</span><span class="hljs-comment"> * 1.实例化（使用构造方法创建对象）</span><span class="hljs-comment"> * 2.初始化  执行init方法</span><span class="hljs-comment"> * 3.服务    执行service方法</span><span class="hljs-comment"> * 4.销毁    执行destroy方法</span><span class="hljs-comment"> */</span><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ServletDemo1</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Servlet</span> &#123;    <span class="hljs-comment">//public ServletDemo1()&#123;&#125;</span>    <span class="hljs-comment">//生命周期方法:当Servlet第一次被创建对象时执行该方法,该方法在整个生命周期中只执行一次</span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">(ServletConfig arg0)</span> <span class="hljs-keyword">throws</span> ServletException &#123;    System.out.println(<span class="hljs-string">&quot;=======init=========&quot;</span>);    &#125;    <span class="hljs-comment">//生命周期方法:对客户端响应的方法,该方法会被执行多次，每次请求该servlet都会执行该方法</span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">service</span><span class="hljs-params">(ServletRequest arg0, ServletResponse arg1)</span>         <span class="hljs-keyword">throws</span> ServletException, IOException &#123;    System.out.println(<span class="hljs-string">&quot;hello&quot;</span>);    &#125;    <span class="hljs-comment">//生命周期方法:当Servlet被销毁时执行该方法</span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">destroy</span><span class="hljs-params">()</span> &#123;         System.out.println(<span class="hljs-string">&quot;******destroy**********&quot;</span>);    &#125;<span class="hljs-comment">//当停止tomcat时也就销毁的servlet。</span>    <span class="hljs-keyword">public</span> ServletConfig <span class="hljs-title function_">getServletConfig</span><span class="hljs-params">()</span> &#123;                <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;    &#125;    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getServletInfo</span><span class="hljs-params">()</span> &#123;        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;    &#125;&#125;</code></pre></div><h2 id="继承-GenericServlet-类"><a href="#继承-GenericServlet-类" class="headerlink" title="继承 GenericServlet 类"></a>继承 GenericServlet 类</h2><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ServletDemo2</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">GenericServlet</span> &#123;    <span class="hljs-meta">@Override</span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">service</span><span class="hljs-params">(ServletRequest arg0, ServletResponse arg1)</span>         <span class="hljs-keyword">throws</span> ServletException, IOException &#123;    System.out.println(<span class="hljs-string">&quot;hello&quot;</span>);    &#125;&#125;</code></pre></div><h2 id="继承-HttpServlet-方法"><a href="#继承-HttpServlet-方法" class="headerlink" title="继承 HttpServlet 方法"></a>继承 HttpServlet 方法</h2><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ServletDemo3</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> &#123;    <span class="hljs-meta">@Override</span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doGet</span><span class="hljs-params">(HttpServletRequest req, HttpServletResponse resp)</span>            <span class="hljs-keyword">throws</span> ServletException, IOException &#123;        System.out.println(<span class="hljs-string">&quot;haha&quot;</span>);    &#125;    <span class="hljs-meta">@Override</span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">doPost</span><span class="hljs-params">(HttpServletRequest req, HttpServletResponse resp)</span>            <span class="hljs-keyword">throws</span> ServletException, IOException &#123;        System.out.println(<span class="hljs-string">&quot;ee&quot;</span>);        doGet(req,resp);    &#125;&#125;</code></pre></div><h2 id="关于-HttpServlet、GenericServlet-和-Servlet-的关系"><a href="#关于-HttpServlet、GenericServlet-和-Servlet-的关系" class="headerlink" title="关于 HttpServlet、GenericServlet 和 Servlet 的关系"></a>关于 HttpServlet、GenericServlet 和 Servlet 的关系</h2><p>对于一个 Servlet 类，我们日常最常用的方法是继承自 HttpServlet 类，提供了 Http 相关的方法，HttpServlet 扩展了 GenericServlet 类，而 GenericServlet 类又实现了 Servlet 类和 ServletConfig 类。</p><p><strong>Servlet</strong></p><p>Servlet 类提供了五个方法，其中三个生命周期方法和两个普通方法，关于 Servlet 类的方法，不再赘述，我主要补充一下另外两个类的实现思路。</p><p><strong>GenericServlet</strong></p><p>GenericServlet 是一个抽象类，实现了 Servlet 接口，并且对其中的 init() 和 destroy() 和 service() 提供了默认实现。在 GenericServlet 中，主要完成了以下任务：</p><ul><li>将 init() 中的 ServletConfig 赋给一个类级变量，可以由 getServletConfig 获得；</li><li>为 Servlet 所有方法提供默认实现；</li><li>可以直接调用 ServletConfig 中的方法；</li></ul><p>基本的结构如下：</p><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">GenericServlet</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Servlet</span>,ServletConfig&#123;    <span class="hljs-comment">//GenericServlet通过将ServletConfig赋给类级变量</span>   <span class="hljs-keyword">private</span> trServletConfig servletConfig;    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">(ServletConfig servletConfig)</span> <span class="hljs-keyword">throws</span> ServletException &#123;      <span class="hljs-built_in">this</span>.servletConfig=servletConfig;      <span class="hljs-comment">/*自定义init()的原因是：如果子类要初始化必须覆盖父类的init() 而使它无效 这样</span><span class="hljs-comment">       this.servletConfig=servletConfig不起作用 这样就会导致空指针异常 这样如果子类要初始化，</span><span class="hljs-comment">       可以直接覆盖不带参数的init()方法 */</span>      <span class="hljs-built_in">this</span>.init();   &#125;      <span class="hljs-comment">//自定义的init()方法，可以由子类覆盖  </span>   <span class="hljs-comment">//init()不是生命周期方法</span>   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">()</span>&#123;     &#125;    <span class="hljs-comment">//实现service()空方法，并且声明为抽象方法，强制子类必须实现service()方法 </span>   <span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">service</span><span class="hljs-params">(ServletRequest request,ServletResponse response)</span>      <span class="hljs-keyword">throws</span> ServletException,java.io.IOException&#123;   &#125;    <span class="hljs-comment">//实现空的destroy方法</span>   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">destroy</span><span class="hljs-params">()</span>&#123; &#125;&#125;</code></pre></div><p>以上就是 GenericServlet 的大致实现思想，可以看到如果继承这个类的话，我们必须重写 service() 方法来对处理请求。</p><p><strong>HttpServlet</strong></p><p>HttpServlet 也是一个抽象类，它进一步继承并封装了 GenericServlet，使得使用更加简单方便，由于是扩展了 Http 的内容，所以还需要使用 HttpServletRequest 和 HttpServletResponse，这两个类分别是 ServletRequest 和 ServletResponse 的子类。代码如下：</p><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HttpServlet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">GenericServlet</span>&#123;    <span class="hljs-comment">//HttpServlet中的service()</span>   <span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">service</span><span class="hljs-params">(HttpServletRequest httpServletRequest,</span><span class="hljs-params">                          HttpServletResponse httpServletResponse)</span>&#123;        <span class="hljs-comment">//该方法通过httpServletRequest.getMethod()判断请求类型调用doGet() doPost()</span>   &#125;    <span class="hljs-comment">//必须实现父类的service()方法</span>   <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">service</span><span class="hljs-params">(ServletRequest servletRequest,ServletResponse servletResponse)</span>&#123;      HttpServletRequest request;      HttpServletResponse response;      <span class="hljs-keyword">try</span>&#123;         request=(HttpServletRequest)servletRequest;         response=(HttpServletResponse)servletResponse;      &#125;<span class="hljs-keyword">catch</span>(ClassCastException)&#123;         <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ServletException</span>(<span class="hljs-string">&quot;non-http request or response&quot;</span>);      &#125;      <span class="hljs-comment">//调用service()方法</span>      <span class="hljs-built_in">this</span>.service(request,response);   &#125;&#125;</code></pre></div><p>我们可以看到，HttpServlet 中对原始的 Servlet 中的方法都进行了默认的操作，不需要显式的销毁初始化以及 service()，在 HttpServlet 中，自定义了一个新的 service() 方法，其中通过 getMethod() 方法判断请求的类型，从而调用 doGet() 或者 doPost() 处理 get,post 请求，使用者只需要继承 HttpServlet，然后重写 doPost() 或者 doGet() 方法处理请求即可。</p><p><strong>我们一般都使用继承 HttpServlet 的方式来定义一个 servlet。</strong></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>后端</category>
+      
+      <category>servlet</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>servlet</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何在命令行运行hexo命令</title>
     <link href="/2023/10/14/%E9%A1%B9%E7%9B%AE/%E4%BD%BF%E7%94%A8github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8Chexo%E5%91%BD%E4%BB%A4/"/>
     <url>/2023/10/14/%E9%A1%B9%E7%9B%AE/%E4%BD%BF%E7%94%A8github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8Chexo%E5%91%BD%E4%BB%A4/</url>
@@ -29,8 +205,16 @@
     <link href="/2023/10/13/%E9%A1%B9%E7%9B%AE/%E4%BD%BF%E7%94%A8github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%B3%E4%BA%8Ehexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <url>/2023/10/13/%E9%A1%B9%E7%9B%AE/%E4%BD%BF%E7%94%A8github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%85%B3%E4%BA%8Ehexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>关于这个问题已经很久远了，现在是我复盘和总结一下这个问题</p></blockquote><p>这个问题想必已经困扰了hexo新手很久了，我回忆一下我那时的情况：</p><p>一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件</p><ul><li><pre><code class="yml">npm install hexo-renderer-marked# 然后在config.yml更改配置post_asset_folder: truemarked:  prependRoot: true  postAsset: true<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey"><br>- ```yml<br><span class="hljs-title">  npm install https:</span>//github.com/CodeFalling/hexo-asset-image<br></code></pre></td></tr></table></figure></code></pre></li></ul><p>装好这两个插件之后，我在source目录下新建了一个image文件夹，我把博客所有的图片都放到image里面，因为这样可以很好的适配typora，引入图片的格式如下：</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs scss">!<span class="hljs-selector-attr">[图片描述]</span>(检索图片的相对路径)<br></code></pre></td></tr></table></figure><p>如何与typora相结合呢？</p><p>首先按照我这样设置typora：<br><img src="/../../../images/image-20231013105859262.png"></p><p>当你每次插入图片时，直接就使用相对路径了，这样一石二鸟，既可以在typora显示图片，在部署的时候也能显示图片，非常方便</p><p><strong>最后提一点，以上方法是你不使用主题的情况</strong>，如果你使用主题的话，直接新建image文件夹，把图片放进去就好了，只是要在文章里面用相对路径引用出来就好了</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure><p>在config.yml里面把这个打开还能在生成文章的同时自动生成文件夹，你也可以把图片放在里面，这个就仁者见仁智者见智了，当然，主题不一样操作还是有细节不同，我用的是3-hexo主题</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>关于这个问题已经很久远了，现在是我复盘和总结一下这个问题</p></blockquote><p>这个问题想必已经困扰了hexo新手很久了，我回忆一下我那时的情况：</p><p>一开始我在网上找解决方法的时候，大部分方法都是需要下载插件，所以我当时下载了两个插件：</p><ul><li><div class="code-wrapper"><pre><code class="yml">npm install hexo-renderer-marked# 然后在config.yml更改配置post_asset_folder: truemarked:  prependRoot: true  postAsset: true<pre><code class="hljs dockerfile">- ```<span class="hljs-keyword">shell</span><span class="language-bash"></span><span class="language-bash">  npm install https://github.com/CodeFalling/hexo-asset-image</span></code></pre></div></code></pre></li></ul><p>装好这两个插件之后，我在source目录下新建了一个image文件夹，我把博客所有的图片都放到image里面，因为这样可以很好的适配typora，引入图片的格式如下：</p><div class="code-wrapper"><pre><code class="hljs md">![<span class="hljs-string">图片描述</span>](<span class="hljs-link">检索图片的相对路径</span>)</code></pre></div><p>如何与typora相结合呢？</p><p>首先按照我这样设置typora：</p><p><img src="/../../../image/image-20231013105859262.png"></p><p>当你每次插入图片时，直接就使用相对路径了，这样一石二鸟，既可以在typora显示图片，在部署的时候也能显示图片，非常方便。</p><p><strong>最后提一点，以上方法是你不使用主题的情况</strong>，如果你使用主题的话，直接新建image文件夹，把图片放进去就好了，只是要在文章里面用相对路径引用出来就好了。</p><div class="code-wrapper"><pre><code class="hljs yml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span></code></pre></div><p>在config.yml里面把这个打开还能在生成文章的同时自动生成文件夹，你也可以把图片放在里面，这个就仁者见仁智者见智了，当然，主题不一样操作还是有细节不同。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>项目</category>
+      
+      <category>快速构建hexo+github博客</category>
+      
+    </categories>
     
     
     <tags>
@@ -45,10 +229,10 @@
   
   <entry>
     <title>python环境配置</title>
-    <link href="/2023/10/12/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    <url>/2023/10/12/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+    <link href="/2023/10/12/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/10/12/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
     
-    <content type="html"><![CDATA[<p><img src="/../../images/image-20231012195926390.png" alt="先把path勾上，再自定义安装"><br><img src="/../../images/image-20231012200038559.png" alt="直接next"><br><img src="/../../images/image-20231012200217920.png"></p><p>验证：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">python</span><br></code></pre></td></tr></table></figure><p><img src="/../../images/image-20231012200529545.png"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="python下载"><a href="#python下载" class="headerlink" title="python下载"></a>python下载</h1><p><a href="https://www.123pan.com/s/lgVZVv-WjOad.html">python3</a></p><h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><ol><li>先勾选Add python.exe to PATH，然后点击Customize installation</li><li>直接点击Next</li><li>勾选Install Python for all users，再自定义安装路径</li></ol><h1 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h1><div class="code-wrapper"><pre><code class="hljs shell">python</code></pre></div>]]></content>
     
     
     
@@ -65,17 +249,25 @@
   
   
   <entry>
-    <title>npm安装依赖报错“npm WARN deprecated”</title>
-    <link href="/2023/10/12/Bug/npm%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E6%8A%A5%E9%94%99%E2%80%9Cnpm-WARN-deprecated%E2%80%9D/"/>
-    <url>/2023/10/12/Bug/npm%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E6%8A%A5%E9%94%99%E2%80%9Cnpm-WARN-deprecated%E2%80%9D/</url>
+    <title>npm安装依赖报错&quot;npm WARN deprecated&quot;</title>
+    <link href="/2023/10/12/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF/vue/npm%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E6%8A%A5%E9%94%99npm-WARN-deprecated/"/>
+    <url>/2023/10/12/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF/vue/npm%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E6%8A%A5%E9%94%99npm-WARN-deprecated/</url>
     
-    <content type="html"><![CDATA[<p>bug如下：</p><p>最近在使用vue-element-admin模板，在下载依赖的时候遇到这个问题</p><p><img src="/../../images/image-20231012165859695.png"></p><p>解决如下：</p><blockquote><p>请先全部看完明白原理再去操作</p></blockquote><ol><li><p>查看npm版本</p><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> -v<br></code></pre></td></tr></table></figure></li><li><p>切换npm版本</p><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> install -g <span class="hljs-built_in">npm</span>@<span class="hljs-string">&#x27;对应版本&#x27;</span><br></code></pre></td></tr></table></figure><p>但是我的nodejs版本也低了，无法安装最新的npm，这属实让我有点烦，不过我的nodejs应该是大一那会儿装的，确实比较老了<br><img src="/../../images/image-20231012171050296.png"></p><p>重新安装nodejs后，再升级npm，这时出现另外一个错误</p><p><img src="/../../images/image-20231012172355685.png"></p><p>所以想要下载好这个模板的依赖，不仅需要对应的npm版本，也需要合适的node版本，去github上看了一下，模板发布时间是4年前(2019)，版本不应该太高才对，但并没有看到相关文档，我只有自己慢慢测试了</p><p>测试最后我的版本如下：</p><p><img src="/../../images/image-20231012173154392.png"></p></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>bug如下：</p><p>最近在使用vue-element-admin模板，在下载依赖的时候遇到这个问题：</p><div class="code-wrapper"><pre><code class="hljs Bug">npm WARN deprecated</code></pre></div><p>解决如下：</p><blockquote><p><strong>请先全部看完，明白原理之后再去操作</strong>，这一点非常重要。</p></blockquote><ol><li><p>查看npm版本</p><div class="code-wrapper"><pre><code class="hljs shell">npm -v</code></pre></div></li><li><p>切换npm版本</p><div class="code-wrapper"><pre><code class="hljs shell">npm install -g npm@&#x27;对应版本&#x27;</code></pre></div><p>经过我的尝试，想要下载好这个模板的依赖，不仅需要对应的npm版本，也需要对应的nodejs版本，这里我直接给出我使用的版本，其他版本自行测试。</p></li></ol><p>版本如下：</p><p><img src="/../../imgs/image-20231012173154392.png"></p><p>没有报错证明是安装成功了的。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>前端</category>
+      
+      <category>vue</category>
+      
+    </categories>
     
     
     <tags>
-      
-      <tag>bug</tag>
       
       <tag>npm</tag>
       
@@ -83,6 +275,8 @@
       
       <tag>vue</tag>
       
+      <tag>vue-element-admin</tag>
+      
     </tags>
     
   </entry>
@@ -90,68 +284,20 @@
   
   
   <entry>
-    <title>速通docker</title>
-    <link href="/2023/10/09/%E6%8A%80%E6%9C%AF/%E9%80%9F%E9%80%9Adocker/"/>
-    <url>/2023/10/09/%E6%8A%80%E6%9C%AF/%E9%80%9F%E9%80%9Adocker/</url>
+    <title>springboot控制器</title>
+    <link href="/2023/10/08/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/springboot/springboot%E6%8E%A7%E5%88%B6%E5%99%A8/"/>
+    <url>/2023/10/08/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/springboot/springboot%E6%8E%A7%E5%88%B6%E5%99%A8/</url>
     
-    <content type="html"><![CDATA[<h1 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h1><p>docker是一种基于go语言的容器技术，用一句话概括容器技术就是：将软件打包成标准化单元，以用于开发、交付和部署。</p><h1 id="2-安装配置"><a href="#2-安装配置" class="headerlink" title="2.安装配置"></a>2.安装配置</h1><blockquote><p>启动Hyper-v</p></blockquote><p><img src="/../../images/image-20231010112809496.png"></p><p><img src="/../../images/image-20231010112918905.png"></p><blockquote><p><a href="https://www.docker.com/get-started/">官网下载</a></p></blockquote><p>先停更本帖</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h1><p>springboot将数据库的数据封装成一个model，然后通过一个控制器（controller）去请求数据，再由model返回数据到controller</p><p>前端发送http请求给controller，controller先将数据返回到一个视图（view），最后view响应http返回给前端</p>]]></content>
     
     
     <categories>
       
       <category>技术</category>
       
-    </categories>
-    
-    
-    <tags>
+      <category>后端</category>
       
-      <tag>技术</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>前言</title>
-    <link href="/2023/10/09/%E6%8A%80%E6%9C%AF/%E5%89%8D%E8%A8%80/"/>
-    <url>/2023/10/09/%E6%8A%80%E6%9C%AF/%E5%89%8D%E8%A8%80/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>少年，你渴望全栈吗？</p></blockquote><p>这篇帖子主要整合我所学的一些技术：</p><ul><li>速通java se</li><li>速通docker</li><li>速通redis</li><li>速通算法</li><li>速通mysql</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>技术</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>技术</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>springboot controller</title>
-    <link href="/2023/10/08/%E9%A1%B9%E7%9B%AE/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/springboot-controller/"/>
-    <url>/2023/10/08/%E9%A1%B9%E7%9B%AE/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/springboot-controller/</url>
-    
-    <content type="html"><![CDATA[<h3 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h3>]]></content>
-    
-    
-    <categories>
-      
-      <category>项目</category>
-      
-      <category>springboot快速上手</category>
+      <category>springboot</category>
       
     </categories>
     
@@ -162,30 +308,7 @@
       
       <tag>springboot</tag>
       
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>给Redmi k20 pro换电池</title>
-    <link href="/2023/10/05/%E9%A1%B9%E7%9B%AE/%E7%88%B1%E7%8E%A9%E6%9C%BA%E7%9A%84%E9%BC%A0%E9%BC%A0/%E7%BB%99Redmi-k20-pro%E6%8D%A2%E7%94%B5%E6%B1%A0/"/>
-    <url>/2023/10/05/%E9%A1%B9%E7%9B%AE/%E7%88%B1%E7%8E%A9%E6%9C%BA%E7%9A%84%E9%BC%A0%E9%BC%A0/%E7%BB%99Redmi-k20-pro%E6%8D%A2%E7%94%B5%E6%B1%A0/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>电池健康度只有六七十了，最近换了一块电池，操作很简单，这里以我的k20p为例子</p></blockquote><h1 id="1-首先给后盖加热一下"><a href="#1-首先给后盖加热一下" class="headerlink" title="1.首先给后盖加热一下"></a>1.首先给后盖加热一下</h1><p>先把电话卡槽取下来，用吹风机开热风给后盖吹吹，过程五六分钟，主要是软化一下胶水（图上标注了哪些地方有胶水）</p><p><img src="/../../../images/image-20231005173447741.png"></p><h1 id="2-然后撬开后盖"><a href="#2-然后撬开后盖" class="headerlink" title="2.然后撬开后盖"></a>2.然后撬开后盖</h1><p><img src="/../../../images/image-20231005173956896.png"><br><img src="/../../../images/image-20231005174125752.png" alt="慢慢撬"></p><h1 id="3-把主板取下来"><a href="#3-把主板取下来" class="headerlink" title="3.把主板取下来"></a>3.把主板取下来</h1><p><img src="/../../../images/image-20231005174623679.png"></p><p><img src="/../../../images/image-20231005174745546.png"></p><h1 id="4-取下电池"><a href="#4-取下电池" class="headerlink" title="4.取下电池"></a>4.取下电池</h1><p><img src="/../../../images/image-20231005175905847.png"></p><p><img src="/../../../images/image-20231005180018101.png" alt="取下之后是这样的"></p><h1 id="5-把自己的电池装上"><a href="#5-把自己的电池装上" class="headerlink" title="5.把自己的电池装上"></a>5.把自己的电池装上</h1><p>怎么取下来就怎么装</p><p><img src="/../../../images/image-20231005180345636.png"></p><h1 id="6-测试开机"><a href="#6-测试开机" class="headerlink" title="6.测试开机"></a>6.测试开机</h1><p>装好电池就可以按住开机键开机了</p><p><img src="/../../../images/image-20231005180602968.png"></p><h1 id="7-最后装主板装后盖"><a href="#7-最后装主板装后盖" class="headerlink" title="7.最后装主板装后盖"></a>7.最后装主板装后盖</h1><p>怎么取下来的怎么装上，只是后盖要涂点胶水，装好后多按后盖几下，最后拿重物压半小时手机，等胶水凝固</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>爱玩机</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>搞机</tag>
+      <tag>后端</tag>
       
     </tags>
     
@@ -195,15 +318,17 @@
   
   <entry>
     <title>小米通用刷机教程</title>
-    <link href="/2023/09/21/%E9%A1%B9%E7%9B%AE/%E7%88%B1%E7%8E%A9%E6%9C%BA%E7%9A%84%E9%BC%A0%E9%BC%A0/%E5%B0%8F%E7%B1%B3%E9%80%9A%E7%94%A8%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
-    <url>/2023/09/21/%E9%A1%B9%E7%9B%AE/%E7%88%B1%E7%8E%A9%E6%9C%BA%E7%9A%84%E9%BC%A0%E9%BC%A0/%E5%B0%8F%E7%B1%B3%E9%80%9A%E7%94%A8%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/</url>
+    <link href="/2023/09/21/%E6%8A%80%E6%9C%AF/%E6%95%B0%E7%A0%81/%E5%B0%8F%E7%B1%B3%E9%80%9A%E7%94%A8%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
+    <url>/2023/09/21/%E6%8A%80%E6%9C%AF/%E6%95%B0%E7%A0%81/%E5%B0%8F%E7%B1%B3%E9%80%9A%E7%94%A8%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>鼠鼠已经是刷机老手，本帖并不会科普（主要我知识也有限），我主要放资源，并不适合新手</p></blockquote><h1 id="1-解锁bl锁"><a href="#1-解锁bl锁" class="headerlink" title="1.解锁bl锁"></a>1.解锁bl锁</h1><p>小米bl解锁工具：<a href="https://azoker.lanzoul.com/ipd3j0t1km0d">https://azoker.lanzoul.com/ipd3j0t1km0d</a></p><p><strong>这一步会清除手机数据，注意备份数据！</strong></p><p>注：我买的二手机redmi 9和redmi k 20 pro都是改了系统时间，并没有绑定账号一周，我并不知道是否玄学</p><h1 id="2-线刷ROM"><a href="#2-线刷ROM" class="headerlink" title="2.线刷ROM"></a>2.线刷ROM</h1><blockquote><p>这一步可以直接跳过，如果你在第三步卡住，再来看第二步</p></blockquote><p>注：我不直接刷rec是因为对于rec的data解密我真的能力有限，因为可能你现在这个系统解密不了data，我建议先线刷ROM，每个手机的ROM资源不一样，需要自行查找，你找到的包一般自带线刷工具，官方的ROM可以用官方的工具</p><p>官方线刷工具：<a href="https://azoker.lanzoul.com/iN3000t1hkgj">https://azoker.lanzoul.com/iN3000t1hkgj</a></p><h1 id="3-刷入rec"><a href="#3-刷入rec" class="headerlink" title="3.刷入rec"></a>3.刷入rec</h1><p>redmi k 20 pro rec：<a href="https://azoker.lanzoul.com/i5TJl19cpnta">https://azoker.lanzoul.com/i5TJl19cpnta</a></p><p>里面自带有一键刷入工具</p><p>注：rec就是卡刷用的，可以不借助电脑</p><h1 id="4-线刷ROM"><a href="#4-线刷ROM" class="headerlink" title="4.线刷ROM"></a>4.线刷ROM</h1><p>这里提供一点下载刷机包网站资源：</p><p><a href="https://mi.fiime.cn/">FiimeROM-小米系统刷机包下载- 类原生ROM</a></p><p><a href="https://mylovezcy.gitee.io/mylovezcy1/index.html">MIUI官方ROM仓库–由米柚发烧友整理维护 (gitee.io)</a></p><p>进入rec，点击安装，刷入刷机包，双清，格式化data，重启</p><p>或者先双清，格式化data，再借助otg（插手机的u盘），电脑把刷机包放到手机里，在rec卡刷</p><h1 id="5-获取root权限"><a href="#5-获取root权限" class="headerlink" title="5.获取root权限"></a>5.获取root权限</h1><p>第一种方式，rec卡刷，直接把面具安装包apk后缀改为zip，进入rec刷入，重启系统进入桌面，就发现面具已经在桌面安装好了，比较方便</p><p>第二种方式，电脑线刷，这一步需要电脑配置adb环境，并且需要有刷机包里面的boot.img文件（解压缩一般可以找到），下面是详细操作：</p><p>首先是资源下载：</p><ul><li>面具：<a href="https://azoker.lanzoul.com/i65CL0t1hm1g">https://azoker.lanzoul.com/i65CL0t1hm1g</a></li><li>adb环境：<a href="https://azoker.lanzoul.com/iOkY70t1hlxc">https://azoker.lanzoul.com/iOkY70t1hlxc</a></li></ul><ol><li><p>安装面具安装包，将boot.img随便放在手机的一个文件夹里，<strong>确保你要找到</strong></p></li><li><p>进入面具，点击右上角安装</p><p><img src="/../../../images/image-20230927115635667.png" alt="点击右上角安装"></p></li><li><p><strong>不</strong>要勾选“安装到recovery”，<strong>直接点击下一步</strong></p><p><img src="/../../../images/image-20230927115820663.png" alt="直接点击下一步"></p><p>点击“选择并修补一个文件”，选择你保存在手机上的boot.img</p><p><img src="/../../../images/image-20230927183700680.png" alt="找到你从电脑复制的boot.img"></p></li><li><p>之后他会生成一个文件，这个文件默认保存在手机根目录下的download文件夹下，在电脑上打开adb-fastboot，把这个文件放到里面，点击“打开命令行.bat”</p></li><li><p>手机进入fastboot，关机之后按音量键上和开机键进入，之后在命令行输入：</p><p><strong>之前放在adb-fastboot文件夹里的，注意后缀也属于文件名</strong></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot flash boot 修补后的img文件名 <br></code></pre></td></tr></table></figure></li><li><p>刷好后重启，输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">fastboot reboot<br></code></pre></td></tr></table></figure></li></ol>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>在我身边似乎并没有这么多人喜欢刷机，估计有人连刷机是什么都不知道，甚至连重装系统都不了解，原来计算机人只有少部分人喜欢数码。</p></blockquote><p>当然，我已经是刷机老手了，这篇文章受众大概会很小，因此我主要放资源。</p><p>再提醒一点，刷机不难，但需谨慎，一定要备份好数据。</p><h1 id="1-解锁bl锁"><a href="#1-解锁bl锁" class="headerlink" title="1.解锁bl锁"></a>1.解锁bl锁</h1><p>小米bl解锁工具：<a href="https://azoker.lanzoul.com/ipd3j0t1km0d">https://azoker.lanzoul.com/ipd3j0t1km0d</a></p><p><strong>这一步会清除手机数据，注意备份数据！</strong></p><h1 id="2-线刷ROM"><a href="#2-线刷ROM" class="headerlink" title="2.线刷ROM"></a>2.线刷ROM</h1><p>官方线刷工具：<a href="https://azoker.lanzoul.com/iN3000t1hkgj">https://azoker.lanzoul.com/iN3000t1hkgj</a></p><p>很多包是自带了线刷工具，我提供一个小米官方的线刷工具。因此，一切以你得到的包为主。</p><p>这里提供一点下载刷机包网站资源：</p><p><a href="https://mi.fiime.cn/">FiimeROM-小米系统刷机包下载- 类原生ROM</a></p><p><a href="https://mylovezcy.gitee.io/mylovezcy1/index.html">MIUI官方ROM仓库–由米柚发烧友整理维护 (gitee.io)</a></p><h1 id="3-刷入rec"><a href="#3-刷入rec" class="headerlink" title="3.刷入rec"></a>3.刷入rec</h1><p>非常遗憾的是，我只剩下k20p的资源了。</p><p>redmi k 20 pro rec：<a href="https://azoker.lanzoul.com/i5TJl19cpnta">https://azoker.lanzoul.com/i5TJl19cpnta</a></p><h1 id="5-获取root"><a href="#5-获取root" class="headerlink" title="5.获取root"></a>5.获取root</h1><p>第一种方式，rec卡刷，直接把面具安装包apk后缀改为zip，进入rec刷入，重启系统进入桌面，就发现面具已经在桌面安装好了，比较方便</p><p>第二种方式，电脑线刷，这一步需要电脑配置adb环境，并且需要有刷机包里面的<strong>boot.img文件</strong>（解压缩一般可以找到）下面是详细操作：</p><p>资源：</p><ul><li>面具：<a href="https://azoker.lanzoul.com/i65CL0t1hm1g">https://azoker.lanzoul.com/i65CL0t1hm1g</a></li><li>adb环境：<a href="https://azoker.lanzoul.com/iOkY70t1hlxc">https://azoker.lanzoul.com/iOkY70t1hlxc</a></li></ul><ol><li><p>安装面具安装包，将boot.img随便放在手机的一个文件夹里，<strong>确保你要找到</strong></p></li><li><p>进入面具，点击右上角安装</p><p><img src="/../../../image/image-20230927115635667.png" alt="点击右上角安装"></p></li><li><p><strong>不</strong>要勾选“安装到recovery”，<strong>直接点击下一步</strong></p><p><img src="/../../../image/image-20230927115820663.png" alt="直接点击下一步"></p><p>点击“选择并修补一个文件”，选择你保存在手机上的boot.img</p><p><img src="/../../../image/image-20230927183700680.png" alt="找到你从电脑复制的boot.img"></p></li><li><p>之后他会生成一个文件，这个文件默认保存在手机根目录下的download文件夹下，在电脑上打开adb-fastboot，把这个文件放到里面，点击“打开命令行.bat”</p></li><li><p>手机进入fastboot，关机之后按音量键上和开机键进入，之后在命令行输入：</p><p><strong>之前放在adb-fastboot文件夹里的，注意后缀也属于文件名</strong></p><div class="code-wrapper"><pre><code class="hljs shell">fastboot flash boot 修补后的img文件名</code></pre></div></li><li><p>刷好后重启，输入</p><div class="code-wrapper"><pre><code class="hljs shell">fastboot reboot</code></pre></div></li></ol>]]></content>
     
     
     <categories>
       
-      <category>爱玩机</category>
+      <category>技术</category>
+      
+      <category>数码</category>
       
     </categories>
     
@@ -221,37 +346,20 @@
   
   
   <entry>
-    <title>Java注解（待完善）</title>
-    <link href="/2023/09/20/Java%E6%B3%A8%E8%A7%A3/"/>
-    <url>/2023/09/20/Java%E6%B3%A8%E8%A7%A3/</url>
+    <title>springboot注解大全</title>
+    <link href="/2023/09/20/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/springboot/springboot%E6%B3%A8%E8%A7%A3%E5%A4%A7%E5%85%A8/"/>
+    <url>/2023/09/20/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/springboot/springboot%E6%B3%A8%E8%A7%A3%E5%A4%A7%E5%85%A8/</url>
     
-    <content type="html"><![CDATA[<h5 id="什么是Java注解"><a href="#什么是Java注解" class="headerlink" title="什么是Java注解"></a>什么是Java注解</h5><p>注解，顾名思义就是对某些事物进行标注说明，存放更多的信息。<br>在java层面，注解又叫java标注，java提供了一套机制，使得我们可以对方法、类、参数、包、域以及变量等添加标准(或附加信息，功能也算是信息的一部分)，并且通过某些定义好的实际触发此段信息。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>springboot快速上手</title>
-    <link href="/2023/09/18/%E9%A1%B9%E7%9B%AE/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/"/>
-    <url>/2023/09/18/%E9%A1%B9%E7%9B%AE/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</url>
-    
-    <content type="html"><![CDATA[<h1 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1.环境配置"></a>1.环境配置</h1><p><a href="/2023/09/15/maven%E9%85%8D%E7%BD%AE/">maven配置</a><br><a href="/2023/09/12/Java%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Java环境</a></p><h1 id="2-springboot介绍"><a href="#2-springboot介绍" class="headerlink" title="2.springboot介绍"></a>2.springboot介绍</h1><p>基于spring框架，为了更好地简化开发流程</p><h1 id="3-springboot特点"><a href="#3-springboot特点" class="headerlink" title="3.springboot特点"></a>3.springboot特点</h1><p>1.约定大于配置，只需要使用很少的配置<br>2.内嵌tomcat和jetty服务器，不需要部署war文件<br>3.提供定制化的starter，简化maven配置，开箱即用<br>4.纯Java配置，没有代码生成，也没有xml文件<br>5.提供一些生产级的监控服务，例如安全监控</p><h1 id="4-创建springboot项目"><a href="#4-创建springboot项目" class="headerlink" title="4.创建springboot项目"></a>4.创建springboot项目</h1><p>打开idea，按照我这样设置，我的环境是jdk1.8</p><p><img src="/../../../images/image-20230919080640343.png" alt="项目创建"></p><p><img src="/../../../images/image-20230918202114911.png" alt="项目插件选择"></p><h1 id="5-启动项目"><a href="#5-启动项目" class="headerlink" title="5.启动项目"></a>5.启动项目</h1><p>我们先观察一下项目结构，DemoApplication类是我们的启动类</p><p><img src="/../../../images/image-20230920115611824.png"></p><p>但是目前运行了这个类是没有页面的，因为做后端我们还没有返回响应，这里还需要再写一个类</p><ol><li>我们先在com.example.demo目录下创建一个包，controller</li><li>在包controller创建一个HelloController类，使用以下代码，我已经注释好了</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs Java"><span class="hljs-keyword">package</span> com.example.demo.controller;<br><br><span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;<br><span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;<br><br><span class="hljs-meta">@RestController</span> <span class="hljs-comment">/* 从类变成控制器，可以接收客户端发送的请求 */</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloController</span> &#123;<br>    <span class="hljs-comment">// http://localhost:8080/hello</span><br>    <span class="hljs-meta">@GetMapping(&quot;/hello&quot;)</span> <span class="hljs-comment">/* 浏览器发送get请求 */</span><br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">hello</span><span class="hljs-params">()</span>&#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;hello,world&quot;</span>; <span class="hljs-comment">/*如果更改了，需要重启服务，光在浏览器刷新是没有效果的 */</span><br><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p><img src="/../../../images/image-20230921183236400.png" alt="HelloController类"></p><p>接下来我们运行main方法就可以在浏览器看到我们响应的hello,world了</p><p>网址：<a href="http://localhost:8080/hello">localhost:8080&#x2F;hello</a></p><p><img src="/../../../images/image-20230921183536491.png"></p><h1 id="6-热部署"><a href="#6-热部署" class="headerlink" title="6.热部署"></a>6.热部署</h1><p>如果我们更改了return的内容，那么我们需要重启服务再刷新浏览器才能看到效果，在后端开发中，我们是需要不断地改代码的，这样非常影响开发效率，所以需要热部署一下：</p><ul><li>springboot提供了spring-boot-devtools组件，使得无须手动重启springboot应用即可重新编译，启动项目，大大缩短编译启动时间</li><li>devtools会监听classpath路径下文件的变动，触发Restart类加载器重新加载该类，从而实现类文件和属性文件的热部署</li><li>并不是所有的更改都需要重启应用，可以通过设置spring.devtools.restart.exclude属性来指定一些文件或目录修改不用重启应用</li></ul><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ul><li><p>在pom.xml配置文件中添加dev-tools依赖</p></li><li><p>使用optional &#x3D; true表示依赖不会传递，即该项目依赖devtools；其他项目如果引入此项目生成的JAR包，则不会包含devtools</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs java">&lt;dependency&gt;<br>&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;<br>&lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;<br>&lt;optional&gt;<span class="hljs-literal">true</span>&lt;/optional&gt;<br>&lt;/dependency&gt;<br></code></pre></td></tr></table></figure></li><li><p>在application.properties中配置devtools</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs java"># 热部署生效<br>spring.devtools.restart.enabled=<span class="hljs-literal">true</span><br># 设置重启目录<br>spring.devtools.restart.additional-paths=src/main/java<br># 设置classpath目录下WEB-INF文件夹内容修改不重启<br>spring.devtools.restart.exclude=<span class="hljs-keyword">static</span><br><br><span class="hljs-comment">/*去掉注释版*/</span><br>spring.devtools.restart.enabled=<span class="hljs-literal">true</span><br>spring.devtools.restart.additional-paths=src/main/java<br>spring.devtools.restart.exclude=<span class="hljs-keyword">static</span><br></code></pre></td></tr></table></figure></li><li><p>最后，我们需要设置idea，最后就可以直接在浏览器刷新了</p><p><img src="/../../../images/image-20230925115115681.png"></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p> 使用ctrl+f检索</p></blockquote><h1 id="一、注解详解（配备了完善的释义）"><a href="#一、注解详解（配备了完善的释义）" class="headerlink" title="一、注解详解（配备了完善的释义）"></a>一、注解详解（配备了完善的释义）</h1><p><code>@SpringBootApplication</code>：申明让spring boot自动给程序进行必要的配置，这个配置等同于：@Configuration ，@EnableAutoConfiguration 和 @ComponentScan 三个配置。</p><p><code>@ResponseBody</code>：表示该方法的返回结果直接写入HTTP response body中，一般在异步获取数据时使用，用于构建RESTful的api。在使用@RequestMapping后，返回值通常解析为跳转路径，加上@Responsebody后返回结果不会被解析为跳转路径，而是直接写入HTTP response body中。比如异步获取json数据，加上@Responsebody后，会直接返回json数据。该注解一般会配合@RequestMapping一起使用。</p><p><code>@Controller</code>：用于定义控制器类，在spring项目中由控制器负责将用户发来的URL请求转发到对应的服务接口（service层），一般这个注解在类中，通常方法需要配合注解@RequestMapping。</p><p><code>@RestController</code>：用于标注控制层组件(如struts中的action)是@ResponseBody和@Controller的合集。</p><p><code>@RequestMapping</code>：提供路由信息，负责URL到Controller中的具体函数的映射。</p><p><code>@EnableAutoConfiguration</code>：SpringBoot自动配置（auto-configuration）：尝试根据你添加的jar依赖自动配置你的Spring应用。例如，如果你的classpath下存在HSQLDB，并且你没有手动配置任何<a href="https://cloud.tencent.com/solution/database?from_column=20065&from=20065">数据库</a>连接beans，那么我们将自动配置一个内存型（in-memory）数据库”。你可以将@EnableAutoConfiguration或者@SpringBootApplication注解添加到一个@Configuration类上来选择自动配置。如果发现应用了你不想要的特定自动配置类，你可以使用@EnableAutoConfiguration注解的排除属性来禁用它们。</p><p><code>@ComponentScan</code>：表示将该类自动发现扫描组件。个人理解相当于，如果扫描到有@Component、@Controller、@Service等这些注解的类，并注册为Bean，可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。如果没有配置的话，Spring Boot会扫描启动类所在包下以及子包下的使用了@Service,@Repository等注解的类。</p><p><code>@Configuration</code>：相当于传统的xml配置文件，如果有些第三方库需要用到xml文件，建议仍然通过@Configuration类作为项目的配置主类——可以使用@ImportResource注解加载xml配置文件。</p><p><code>@Import</code>：用来导入其他配置类。</p><p><code>@ImportResource</code>：用来加载xml配置文件。</p><p><code>@Autowired</code>：自动导入依赖的bean</p><p><code>@Service</code>：一般用于修饰service层的组件</p><p><code>@Repository</code>：使用@Repository注解可以确保DAO或者repositories提供异常转译，这个注解修饰的DAO或者repositories类会被ComponetScan发现并配置，同时也不需要为它们提供XML配置项。</p><p><code>@Value</code>：注入Spring boot application.properties配置的属性的值。示例代码：</p><p><code>@Inject</code>：等价于默认的@Autowired，只是没有required属性；</p><p><code>@Component</code>：泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注。</p><p><code>@Bean</code>:相当于XML中的,放在方法的上面，而不是类，意思是产生一个bean,并交给spring管理。</p><p><code>@AutoWired</code>：自动导入依赖的bean。byType方式。把配置好的Bean拿来用，完成属性、方法的组装，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。当加上（required&#x3D;false）时，就算找不到bean也不报错。</p><p><code>@Qualifier</code>：当有多个同一类型的Bean时，可以用@Qualifier(“name”)来指定。与@Autowired配合使用。@Qualifier限定描述符除了能根据名字进行注入，但能进行更细粒度的控制如何选择候选者，具体使用方式如下：</p><p><code>@Resource(name=”name”,type=”type”)</code>：没有括号内内容的话，默认byName。与@Autowired干类似的事。</p><h1 id="二、注解列表如下"><a href="#二、注解列表如下" class="headerlink" title="二、注解列表如下"></a>二、注解列表如下</h1><p><code>@SpringBootApplication</code>：包含了@ComponentScan、@Configuration和@EnableAutoConfiguration注解。其中@ComponentScan：让spring Boot扫描到Configuration类并把它加入到程序上下文。</p><p><code>@Configuration</code> ：等同于spring的XML配置文件；使用Java代码可以检查类型安全。</p><p><code>@EnableAutoConfiguration</code>：自动配置。</p><p><code>@ComponentScan</code> ：组件扫描，可自动发现和装配一些Bean。</p><p><code>@Component</code>：可配合CommandLineRunner使用，在程序启动后执行一些基础任务。</p><p><code>@RestController</code>：注解是@Controller和@ResponseBody的合集,表示这是个控制器bean,并且是将函数的返回值直 接填入HTTP响应体中,是REST风格的控制器。</p><p><code>@PathVariable</code>：获取参数。</p><p><code>@JsonBackReference</code>：解决嵌套外链问题。</p><p><code>@RepositoryRestResource</code>：配合spring-boot-starter-data-rest使用。</p><h1 id="三、JPA注解"><a href="#三、JPA注解" class="headerlink" title="三、JPA注解"></a>三、JPA注解</h1><p><code>@Entity</code>：@Table(name&#x3D;”“)：表明这是一个实体类。一般用于jpa这两个注解一般一块使用，但是如果表名和实体类名相同的话，@Table可以省略</p><p><code>@MappedSuperClass</code>:用在确定是父类的entity上。父类的属性子类可以继承。</p><p><code>@NoRepositoryBean</code>:一般用作父类的repository，有这个注解，spring不会去实例化该repository。</p><p><code>@Column</code>：如果字段名与列名相同，则可以省略。</p><p><code>@Id</code>：表示该属性为主键。</p><p><code>@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = “repair_seq”)</code>：表示主键生成策略是sequence（可以为Auto、IDENTITY、native等，Auto表示可在多个数据库间切换），指定sequence的名字是repair_seq。</p><p><code>@SequenceGeneretor(name = “repair_seq”, sequenceName = “seq_repair”, allocationSize = 1)</code>：name为sequence的名称，以便使用，sequenceName为数据库的sequence名称，两个名称可以一致。</p><p><code>@Transient</code>：表示该属性并非一个到数据库表的字段的映射,ORM框架将忽略该属性。如果一个属性并非数据库表的字段映射,就务必将其标示为@Transient,否则,ORM框架默认其注解为@Basic。</p><p><code>@Basic(fetch=FetchType.LAZY)</code>：标记可以指定实体属性的加载方式</p><p><code>@JsonIgnore</code>：作用是json序列化时将Java bean中的一些属性忽略掉,序列化和反序列化都受影响。</p><p><code>@JoinColumn（name=”loginId”）</code>:一对一：本表中指向另一个表的外键。一对多：另一个表指向本表的外键。</p><p><code>@OneToOne、@OneToMany、@ManyToOne</code>：对应hibernate配置文件中的一对一，一对多，多对一。</p><h1 id="四、springMVC相关注解"><a href="#四、springMVC相关注解" class="headerlink" title="四、springMVC相关注解"></a>四、springMVC相关注解</h1><p><code>@RequestMapping</code>：@RequestMapping(“&#x2F;path”)表示该控制器处理所有“&#x2F;path”的UR L请求。RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。</p><p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。该注解有六个属性：</p><p>params:指定request中必须包含某些参数值是，才让该方法处理。headers:指定request中必须包含某些指定的header值，才能让该方法处理请求。value:指定请求的实际地址，指定的地址可以是URI Template 模式 method:指定请求的method类型， GET、POST、PUT、DELETE等 consumes:指定处理请求的提交内容类型（Content-Type），如application&#x2F;json,text&#x2F;html; produces:指定返回的内容类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回</p><p><code>@RequestParam</code>：用在方法的参数前面。</p><p>String a &#x3D;request.getParameter(“a”)。</p><p><code>@PathVariable</code>:路径变量。如</p><p>参数与大括号里的名字一样要相同。</p><h1 id="五、全局异常处理"><a href="#五、全局异常处理" class="headerlink" title="五、全局异常处理"></a>五、全局异常处理</h1><p><code>@ControllerAdvice</code>：包含@Component。可以被扫描到。统一处理异常。</p><p><code>@ExceptionHandler（Exception.class）</code>：用在方法上面表示遇到这个异常就执行以下方法。</p><h1 id="六、项目中具体配置解析和使用环境"><a href="#六、项目中具体配置解析和使用环境" class="headerlink" title="六、项目中具体配置解析和使用环境"></a>六、项目中具体配置解析和使用环境</h1><p><code>@MappedSuperclass</code>：</p><p>1.@MappedSuperclass 注解使用在父类上面，是用来标识父类的</p><p>2.@MappedSuperclass 标识的类表示其不能映射到数据库表，因为其不是一个完整的实体类，但是它所拥有的属性能够映射在其子类对用的数据库表中</p><p>3.@MappedSuperclass 标识的类不能再有@Entity或@Table注解</p><p><code>@Column</code>：</p><p>a.当实体的属性与其映射的数据库表的列不同名时需要使用@Column标注说明，该属性通常置于实体的属性声明语句之前，还可与 @Id 标注一起使用。</p><p>b.@Column 标注的常用属性是name，用于设置映射数据库表的列名。此外，该标注还包含其它多个属性，如：unique、nullable、length、precision等。具体如下：</p><p>（1） name属性：name属性定义了被标注字段在数据库表中所对应字段的名称</p><p>（2） unique属性：unique属性表示该字段是否为唯一标识，默认为false，如果表中有一个字段需要唯一标识，则既可以使用该标记，也可以使用@Table注解中的@UniqueConstraint</p><p>（3） nullable属性：nullable属性表示该字段是否可以为null值，默认为true</p><p>（4） insertable属性：insertable属性表示在使用”INSERT”语句插入数据时，是否需要插入该字段的值</p><p>（5） updateable属性：updateable属性表示在使用”UPDATE”语句插入数据时，是否需要更新该字段的值</p><p>（6） insertable和updateable属性：一般多用于只读的属性，例如主键和外键等，这些字段通常是自动生成的</p><p>（7） columnDefinition属性：columnDefinition属性表示创建表时，该字段创建的SQL语句，一般用于通过Entity生成表定义时使用，如果数据库中表已经建好，该属性没有必要使用</p><p>（8） table属性：table属性定义了包含当前字段的表名</p><p>（9） length属性：length属性表示字段的长度，当字段的类型为varchar时，该属性才有效，默认为255个字符</p><p>（10）precision属性和scale属性：precision属性和scale属性一起表示精度，当字段类型为double时，precision表示数值的总长度，scale表示小数点所占的位数</p><p>具体如下：</p><p>double类型将在数据库中映射为double类型，precision和scale属性无效 double类型若在columnDefinition属性中指定数字类型为decimal并指定精度，则最终以columnDefinition为准</p><p>BigDecimal类型在数据库中映射为decimal类型，precision和scale属性有效</p><p>precision和scale属性只在BigDecimal类型中有效</p><p>c.@Column 标注的columnDefinition属性: 表示该字段在数据库中的实际类型.通常 ORM 框架可以根据属性类型自动判断数据库中字段的类型,但是对于Date类型仍无法确定数据库中字段类型究竟是DATE,TIME还是TIMESTAMP.此外,String的默认映射类型为VARCHAR,如果要将 String 类型映射到特定数据库的 BLOB 或TEXT字段类型.</p><p>d.@Column标注也可置于属性的getter方法之前</p><p><code>@Getter和@Setter</code>（Lombok）@Setter：注解在属性上；为属性提供 setting 方法 @Getter：注解在属性上；为属性提供 getting 方法</p><p><code>@Data</code>：注解在类上；提供类所有属性的 getting 和 setting 方法，此外还提供了equals、canEqual、hashCode、toString 方法</p><p><code>@Setter</code>：注解在属性上；为属性提供 setting 方法</p><p><code>@Getter</code>：注解在属性上；为属性提供 getting 方法</p><p><code>@Log4j2</code>：注解在类上；为类提供一个 属性名为log 的 log4j 日志对象，和@Log4j注解类似</p><p><code>@NoArgsConstructor</code>：注解在类上；为类提供一个无参的构造方法</p><p><code>@AllArgsConstructor</code>：注解在类上；为类提供一个全参的构造方法</p><p><code>@EqualsAndHashCode</code>:默认情况下，会使用所有非瞬态(non-transient)和非静态(non-static)字段来生成equals和hascode方法，也可以指定具体使用哪些属性。</p><p><code>@toString</code>:生成toString方法，默认情况下，会输出类名、所有属性，属性会按照顺序输出，以逗号分割。</p><p><code>@NoArgsConstructor, @RequiredArgsConstructor and @AllArgsConstructor</code>：无参构造器、部分参数构造器、全参构造器，当我们需要重载多个构造器的时候，只能自己手写了</p><p><code>@NonNull</code>：注解在属性上，如果注解了，就必须不能为Null</p><p><code>@val</code>:注解在属性上，如果注解了，就是设置为final类型，可查看源码的注释知道</p><p>当你在执行各种持久化方法的时候，实体的状态会随之改变，状态的改变会引发不同的生命周期事件。这些事件可以使用不同的注释符来指示发生时的回调函数。</p><p>@javax.persistence.PostLoad：加载后。@javax.persistence.PrePersist：持久化前。@javax.persistence.PostPersist：持久化后。@javax.persistence.PreUpdate：更新前。@javax.persistence.PostUpdate：更新后。@javax.persistence.PreRemove：删除前。@javax.persistence.PostRemove：删除后。</p><p>1）数据库查询</p><p>@PostLoad事件在下列情况下触发：</p><p>执行EntityManager.find()或getreference()方法载入一个实体后。</p><p>执行JPQL查询后。</p><p>EntityManager.refresh()方法被调用后。</p><p>2）数据库插入</p><p>@PrePersist和@PostPersist事件在实体对象插入到数据库的过程中发生：</p><p>@PrePersist事件在调用persist()方法后立刻发生，此时的数据还没有真正插入进数据库。</p><p>@PostPersist事件在数据已经插入进数据库后发生。</p><p>3）数据库更新</p><p>@PreUpdate和@PostUpdate事件的触发由更新实体引起：</p><p>@PreUpdate事件在实体的状态同步到数据库之前触发，此时的数据还没有真正更新到数据库。</p><p>@PostUpdate事件在实体的状态同步到数据库之后触发，同步在事务提交时发生。</p><p>4）数据库删除</p><p>@PreRemove和@PostRemove事件的触发由删除实体引起：</p><p>@PreRemove事件在实体从数据库删除之前触发，即在调用remove()方法删除时发生，此时的数据还没有真正从数据库中删除。</p><p>@PostRemove事件在实体从数据库中删除后触发。</p>]]></content>
     
     
     <categories>
       
-      <category>项目</category>
+      <category>技术</category>
       
-      <category>springboot快速上手</category>
+      <category>后端</category>
+      
+      <category>springboot</category>
       
     </categories>
     
@@ -262,6 +370,41 @@
       
       <tag>springboot</tag>
       
+      <tag>后端</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>springboot快速上手</title>
+    <link href="/2023/09/18/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/springboot/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/"/>
+    <url>/2023/09/18/%E6%8A%80%E6%9C%AF/%E5%90%8E%E7%AB%AF/springboot/springboot%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</url>
+    
+    <content type="html"><![CDATA[<h1 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1.环境配置"></a>1.环境配置</h1><p><a href="/2023/09/15/maven%E9%85%8D%E7%BD%AE/">maven配置</a><br><a href="/2023/09/12/Java%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">Java环境</a></p><h1 id="2-springboot介绍"><a href="#2-springboot介绍" class="headerlink" title="2.springboot介绍"></a>2.springboot介绍</h1><p>基于spring框架，为了更好地简化开发流程</p><h1 id="3-springboot特点"><a href="#3-springboot特点" class="headerlink" title="3.springboot特点"></a>3.springboot特点</h1><p>1.约定大于配置，只需要使用很少的配置<br>2.内嵌tomcat和jetty服务器，不需要部署war文件<br>3.提供定制化的starter，简化maven配置，开箱即用<br>4.纯Java配置，没有代码生成，也没有xml文件<br>5.提供一些生产级的监控服务，例如安全监控</p><h1 id="4-创建springboot项目"><a href="#4-创建springboot项目" class="headerlink" title="4.创建springboot项目"></a>4.创建springboot项目</h1><p>打开idea，按照我这样设置，我的环境是jdk1.8</p><p><img src="/../../../../images/image-20230919080640343.png" alt="项目创建"></p><p><img src="/../../../../images/image-20230918202114911.png" alt="项目插件选择"></p><h1 id="5-启动项目"><a href="#5-启动项目" class="headerlink" title="5.启动项目"></a>5.启动项目</h1><p>我们先观察一下项目结构，DemoApplication类是我们的启动类</p><p><img src="/../../../../images/image-20230920115611824.png"></p><p>但是目前运行了这个类是没有页面的，因为做后端我们还没有返回响应，这里还需要再写一个类</p><ol><li>我们先在com.example.demo目录下创建一个包，controller</li><li>在包controller创建一个HelloController类，使用以下代码，我已经注释好了</li></ol><div class="code-wrapper"><pre><code class="hljs Java"><span class="hljs-keyword">package</span> com.example.demo.controller;<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.GetMapping;<span class="hljs-keyword">import</span> org.springframework.web.bind.annotation.RestController;<span class="hljs-meta">@RestController</span> <span class="hljs-comment">/* 从类变成控制器，可以接收客户端发送的请求 */</span><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloController</span> &#123;    <span class="hljs-comment">// http://localhost:8080/hello</span>    <span class="hljs-meta">@GetMapping(&quot;/hello&quot;)</span> <span class="hljs-comment">/* 浏览器发送get请求 */</span>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">hello</span><span class="hljs-params">()</span>&#123;        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;hello,world&quot;</span>; <span class="hljs-comment">/*如果更改了，需要重启服务，光在浏览器刷新是没有效果的 */</span>    &#125;&#125;</code></pre></div><p><img src="/../../../../images/image-20230921183236400.png" alt="HelloController类"></p><p>接下来我们运行main方法就可以在浏览器看到我们响应的hello,world了</p><p>网址：<a href="http://localhost:8080/hello">localhost:8080&#x2F;hello</a></p><p><img src="/../../../../images/image-20230921183536491.png"></p><h1 id="6-热部署"><a href="#6-热部署" class="headerlink" title="6.热部署"></a>6.热部署</h1><p>如果我们更改了return的内容，那么我们需要重启服务再刷新浏览器才能看到效果，在后端开发中，我们是需要不断地改代码的，这样非常影响开发效率，所以需要热部署一下：</p><ul><li>springboot提供了spring-boot-devtools组件，使得无须手动重启springboot应用即可重新编译，启动项目，大大缩短编译启动时间</li><li>devtools会监听classpath路径下文件的变动，触发Restart类加载器重新加载该类，从而实现类文件和属性文件的热部署</li><li>并不是所有的更改都需要重启应用，可以通过设置spring.devtools.restart.exclude属性来指定一些文件或目录修改不用重启应用</li></ul><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ul><li><p>在pom.xml配置文件中添加dev-tools依赖</p></li><li><p>使用optional &#x3D; true表示依赖不会传递，即该项目依赖devtools；其他项目如果引入此项目生成的JAR包，则不会包含devtools</p><div class="code-wrapper"><pre><code class="hljs java">&lt;dependency&gt;&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;&lt;optional&gt;<span class="hljs-literal">true</span>&lt;/optional&gt;&lt;/dependency&gt;</code></pre></div></li><li><p>在application.properties中配置devtools</p><div class="code-wrapper"><pre><code class="hljs java"># 热部署生效spring.devtools.restart.enabled=<span class="hljs-literal">true</span># 设置重启目录spring.devtools.restart.additional-paths=src/main/java# 设置classpath目录下WEB-INF文件夹内容修改不重启spring.devtools.restart.exclude=<span class="hljs-keyword">static</span><span class="hljs-comment">/*去掉注释版*/</span>spring.devtools.restart.enabled=<span class="hljs-literal">true</span>spring.devtools.restart.additional-paths=src/main/javaspring.devtools.restart.exclude=<span class="hljs-keyword">static</span></code></pre></div></li><li><p>最后，我们需要设置idea，最后就可以直接在浏览器刷新了</p><p><img src="/../../../../images/image-20230925115115681.png"></p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>后端</category>
+      
+      <category>springboot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>springboot</tag>
+      
+      <tag>后端</tag>
+      
     </tags>
     
   </entry>
@@ -270,10 +413,10 @@
   
   <entry>
     <title>maven配置</title>
-    <link href="/2023/09/15/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/maven%E9%85%8D%E7%BD%AE/"/>
-    <url>/2023/09/15/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/maven%E9%85%8D%E7%BD%AE/</url>
+    <link href="/2023/09/15/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/maven%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/09/15/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/maven%E9%85%8D%E7%BD%AE/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>虽然idea自带了maven，不过为了更好地学习maven我选择自行配置maven，同时也更方便管理项目</p></blockquote><p><a href="https://maven.apache.org/download.cgi">maven官网下载</a></p><p>解压打开，进入conf文件夹，打开setting.xml</p><h1 id="1-配置jar包存储仓库"><a href="#1-配置jar包存储仓库" class="headerlink" title="1.配置jar包存储仓库"></a>1.配置jar包存储仓库</h1><p>默认下载的jar包是放在c盘的，这里可以更改路径（按照注释格式），觉得没必要可以划走</p><p><img src="/../../images/image-20230915145942701.png"></p><h1 id="2-配置镜像"><a href="#2-配置镜像" class="headerlink" title="2.配置镜像"></a>2.配置镜像</h1><p>这里我们使用阿里云的镜像，160行开始改一下mirror</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">mirror</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">id</span>&gt;</span>aliyunmaven<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span><br>     <span class="hljs-tag">&lt;<span class="hljs-name">mirrorOf</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">mirrorOf</span>&gt;</span><br>     <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>阿里云公共仓库<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span><br>     <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">mirror</span>&gt;</span><br></code></pre></td></tr></table></figure><p><img src="/../../images/image-20230915150751147.png" alt="配置完成图"></p><p>接下来配置环境变量MAVEN_HOME，和JAVA_HOME一样，要用的时候直接在项目文件的setting里面导入就可以了</p><ul><li>MAVEN_HOME：maven路径</li><li>path：%MAVEN_HOME%&#x2F;bin</li></ul><p><img src="/../../images/image-20230919075036599.png" alt="导入maven，注意是在setting for new project，这样每次构建新项目都是用的是你自己配置的maven"></p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>虽然idea自带了maven，不过为了更好地学习maven我选择自行配置maven，同时也方便我备份配置。</p></blockquote><p><a href="https://maven.apache.org/download.cgi">maven官网下载</a></p><p><a href="https://www.123pan.com/s/lgVZVv-bdRad.html">我个人的配置</a></p><h1 id="1-配置jar包存储仓库"><a href="#1-配置jar包存储仓库" class="headerlink" title="1.配置jar包存储仓库"></a>1.配置jar包存储仓库</h1><p>解压打开，进入conf文件夹，打开setting.xml</p><blockquote><p>默认下载的jar包是放在c盘的，这里可以更改路径（按照注释格式），觉得没必要可以划走</p></blockquote><div class="code-wrapper"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!--这里的settings已经有了，直接加上localRepository就可以了--&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">settings</span>&gt;</span>    <span class="hljs-comment">&lt;!--路径自定义--&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-name">localRepository</span>&gt;</span>D:/projects/.mvn/repo<span class="hljs-tag">&lt;/<span class="hljs-name">localRepository</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span></code></pre></div><h1 id="2-配置镜像"><a href="#2-配置镜像" class="headerlink" title="2.配置镜像"></a>2.配置镜像</h1><p>然后我们使用阿里云的镜像：</p><div class="code-wrapper"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">settings</span>&gt;</span>    <span class="hljs-tag">&lt;<span class="hljs-name">mirrors</span>&gt;</span>        <span class="hljs-comment">&lt;!--把mirror复制到mirrors里面就行了--&gt;</span>        <span class="hljs-tag">&lt;<span class="hljs-name">mirror</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">id</span>&gt;</span>aliyunmaven<span class="hljs-tag">&lt;/<span class="hljs-name">id</span>&gt;</span>     <span class="hljs-tag">&lt;<span class="hljs-name">mirrorOf</span>&gt;</span>*<span class="hljs-tag">&lt;/<span class="hljs-name">mirrorOf</span>&gt;</span>     <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>阿里云公共仓库<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>     <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">mirror</span>&gt;</span>    <span class="hljs-tag">&lt;/<span class="hljs-name">mirrors</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span></code></pre></div><p>接下来配置环境变量MAVEN_HOME，和JAVA_HOME一样，要用的时候直接在项目文件的setting里面导入就可以了</p><div class="code-wrapper"><pre><code class="hljs 配置路径">MAVEN_HOME：maven解压路径path：%MAVEN_HOME%/bin</code></pre></div><p>在idea里面设置：</p><p><strong>File</strong> -&gt; <strong>New Projects Setups</strong> -&gt; <strong>Setting for New Project</strong> -&gt; <strong>Build,Execution,Deployment</strong> -&gt; <strong>Build Tools</strong> -&gt; <strong>Maven</strong></p><p><img src="/../../../image/image-20230919075036599.png"></p><p>这样一来在我们在idea构建springboot项目的时候就会自动使用我们配置maven</p>]]></content>
     
     
     
@@ -282,6 +425,8 @@
       <tag>Java</tag>
       
       <tag>环境配置</tag>
+      
+      <tag>Maven</tag>
       
     </tags>
     
@@ -294,8 +439,16 @@
     <link href="/2023/09/13/%E9%A1%B9%E7%9B%AE/%E4%BD%BF%E7%94%A8github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E9%83%A8%E7%BD%B2hexo%E5%88%B0github/"/>
     <url>/2023/09/13/%E9%A1%B9%E7%9B%AE/%E4%BD%BF%E7%94%A8github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E9%83%A8%E7%BD%B2hexo%E5%88%B0github/</url>
     
-    <content type="html"><![CDATA[<blockquote><p>以下均在Windows系统下操作</p></blockquote><h1 id="1-安装环境："><a href="#1-安装环境：" class="headerlink" title="1.安装环境："></a>1.安装环境：</h1><p>git：<a href="https://git-scm.com/download/win">官网下载</a> （选择win系统下载）<br>nodejs：<a href="https://nodejs.org/en">官网下载</a> （选择LTS版本下载）</p><p><img src="/../../../images/image-20230913104205829.png" alt="安装成功结果图"></p><p>这里要提一下npm换镜像源的问题：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm config get registry  //查看当前镜像<br>npm config set registry https://registry.npmmirror.com //切换镜像<br></code></pre></td></tr></table></figure><p>没有使用淘宝源是因为听说它在去年六月下架了，所以防范未然，当然如果有代理会方便很多</p><h1 id="2-hexo安装："><a href="#2-hexo安装：" class="headerlink" title="2.hexo安装："></a>2.hexo安装：</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install hexo-cli -g<br></code></pre></td></tr></table></figure><p><img src="/../../../images/image-20230913104029438.png"></p><p><img src="/../../../images/image-20230913104344380.png" alt="hexo安装成功"></p><h1 id="3-部署Blog："><a href="#3-部署Blog：" class="headerlink" title="3.部署Blog："></a>3.部署Blog：</h1><p>新建一个博客文件夹，我命名为test，进入test，鼠标右键，通过git bash打开</p><p><img src="/../../../images/image-20230913105050481.png"></p><p>初始化-&gt;生成静态页面-&gt;启动服务器</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo init<br>hexo generate  // 简写 hexo g<br>hexo server  // 简写 hexo s<br></code></pre></td></tr></table></figure><p><img src="/../../../images/image-20230913110010017.png" alt="运行结果1"></p><p><img src="/../../../images/image-20230913110036096.png" alt="运行结果2"></p><p><img src="/../../../images/image-20230913110132666.png" alt="运行结果3"></p><p>复制快捷键：ctrl+insert粘贴快捷键：shift+insert<br>复制粘贴<a href="http://localhost:4000/%E5%88%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%BC%80">http://localhost:4000/到浏览器打开</a></p><p><img src="/../../../images/image-20230913110534528.png" alt="出现这样的界面就说明成功了"></p><p>按下ctrl+c停止服务，然后我们需要配置一下本地的ssh连接github，在当前git窗口下输入下列命令，一直回车</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd ~<br>mkdir ~/.ssh<br>cd .ssh<br>git config --global user.name &quot;你的名字&quot;  <br>git config --global user.email &quot;你的邮箱&quot;<br>ssh-keygen -t rsa -C &quot;你的email&quot;<br></code></pre></td></tr></table></figure><p>在.ssh文件夹下会生成id_rsa和id_rsa.pub两个文件</p><p>用记事本打开id_rsa.pub，全选复制粘贴到github<br><img src="/../../../images/image-20230913114309364.png" alt="打开setting"><br><img src="/../../../images/image-20230913114545799.png" alt="添加ssh key"></p><p>最后验证一下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">ssh -T git@github.com<br></code></pre></td></tr></table></figure><p>如果是第一次的会提示是否continue，输入yes就会看到：<br>You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github</p><blockquote><p>如果你没有github账号，你需要先注册一个</p></blockquote><p>然后你需要新建一个仓库，如图：</p><p><img src="/../../../images/image-20230913115429619.png"></p><p><img src="/../../../images/image-20230913115552122.png" alt="添加仓库名字为账户名字，然后设置为public，这两步很重要"></p><p><img src="/../../../images/image-20230913184655426.png" alt="在项目界面找ssh连接"></p><p>然后我们打开text目录，找到并打开_config.yml文件，第104行代码，注意冒号后面有空格</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-comment"># 这里填刚刚复制的ssh地址</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure><p><img src="/../../../images/image-20230913212428636.png"></p><p>然后在git运行（hexo clean 一定要运行一下，不然可能上传不了）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">如果报错</span><br>ERROR Deployer not found: git<br></code></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">安装插件</span><br>npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">hexo clean # 这里不能简写哦，反正我的不行<br>hexo deploy # 简写 hexo d<br></code></pre></td></tr></table></figure><p>如果加速了也无法连接github，比较玄学，重新启动git试试，github服务器经常抽风，不行就多来几次</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>以下均在Windows系统下操作</p></blockquote><blockquote><p>注意：以下均在Windows系统下操作</p></blockquote><h1 id="1-安装环境："><a href="#1-安装环境：" class="headerlink" title="1.安装环境："></a>1.安装环境：</h1><p>git：<a href="https://git-scm.com/download/win">官网下载</a> （选择win系统下载）<br>nodejs：<a href="https://nodejs.org/en">官网下载</a> （选择LTS版本下载）</p><p>验证：</p><div class="code-wrapper"><pre><code class="hljs shell">node -vgit -vnpm -v</code></pre></div><p>这里要提一下npm换镜像源的问题：</p><div class="code-wrapper"><pre><code class="hljs shell">npm config get registry  # 查看当前镜像npm config set registry https://registry.npmmirror.com # 切换镜像</code></pre></div><p>没有使用淘宝源是因为听说它在去年六月下架了，所以防范未然，当然如果有代理会方便很多</p><h1 id="2-hexo安装："><a href="#2-hexo安装：" class="headerlink" title="2.hexo安装："></a>2.hexo安装：</h1><div class="code-wrapper"><pre><code class="hljs shell">npm install hexo-cli -g</code></pre></div><h1 id="3-部署Blog："><a href="#3-部署Blog：" class="headerlink" title="3.部署Blog："></a>3.部署Blog：</h1><p>新建一个博客文件夹，我命名为test，进入test，鼠标右键，通过git bash打开</p><p><img src="/../../../imgs/hexo%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A21.png"></p><p>运行下面的命令，初始化-&gt;生成静态页面-&gt;启动服务器</p><div class="code-wrapper"><pre><code class="hljs shell">hexo inithexo generate  # 简写 hexo ghexo server  # 简写 hexo s</code></pre></div><blockquote><p>复制快捷键：ctrl+insert粘贴快捷键：shift+insert<br>复制粘贴<a href="http://localhost:4000/%E5%88%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%93%E5%BC%80">http://localhost:4000/到浏览器打开</a></p></blockquote><p><img src="/../../../imgs/hexo%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A22.png" alt="出现这样的界面就说明成功了"></p><p>按下ctrl+c停止服务，然后我们需要配置一下本地的ssh连接github，在当前git窗口下输入下列命令，一直按回车即可</p><div class="code-wrapper"><pre><code class="hljs shell">cd ~mkdir ~/.sshcd .sshgit config --global user.name &quot;你的名字&quot;  git config --global user.email &quot;你的邮箱&quot;ssh-keygen -t rsa -C &quot;你的email&quot;</code></pre></div><p>在.ssh文件夹下会生成id_rsa和id_rsa.pub两个文件，用记事本打开id_rsa.pub，全选复制</p><p>在github的setting里找到SSH and GPG keys，然后new SHH key，然后粘贴</p><p><img src="/../../../imgs/hexo%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A23.png"></p><p>最后验证一下：</p><div class="code-wrapper"><pre><code class="hljs shell">ssh -T git@github.com</code></pre></div><p>如果是第一次的会提示是否continue，输入yes就会看到：<br>You’ve successfully authenticated, but GitHub does not provide shell access 。</p><p>这就表示已成功连上github</p><blockquote><p>如果你没有github账号，你需要先注册一个</p></blockquote><p>然后你需要新建一个仓库：</p><p><img src="/../../../imgs/hexo%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A24.png" alt="添加仓库名字为账户名字，然后设置为public，这两步很重要"></p><p>接下来复制SSH：</p><p><img src="/../../../imgs/hexo%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A25.png" alt="在项目界面找ssh连接"></p><p>然后我们打开text目录，找到并打开_config.yml文件，第104行代码，注意冒号后面有空格</p><div class="code-wrapper"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span>  <span class="hljs-attr">repo:</span> <span class="hljs-comment"># 这里填刚刚复制的ssh地址</span>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span></code></pre></div><p><img src="/../../../imgs/hexo%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A26.png"></p><p>然后在git运行（hexo clean 一定要运行一下，不然可能上传不了）</p><div class="code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">如果报错</span>ERROR Deployer not found: git</code></pre></div><div class="code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">安装插件</span>npm install hexo-deployer-git --save</code></pre></div><div class="code-wrapper"><pre><code class="hljs shell">hexo clean # 这里不能简写哦，反正我的不行hexo deploy # 简写 hexo d</code></pre></div><p>如果加速了也无法连接github，比较玄学，重新启动git试试，github服务器经常抽风，不行就多来几次</p>]]></content>
     
+    
+    <categories>
+      
+      <category>项目</category>
+      
+      <category>快速构建hexo+github博客</category>
+      
+    </categories>
     
     
     <tags>
@@ -312,10 +465,10 @@
   
   <entry>
     <title>Java环境配置</title>
-    <link href="/2023/09/12/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Java%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    <url>/2023/09/12/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Java%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+    <link href="/2023/09/12/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Java%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <url>/2023/09/12/%E5%B7%A5%E5%85%B7/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Java%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
     
-    <content type="html"><![CDATA[<p>方案1：<br>只配置path：jdk路径&#x2F;bin</p><p>方案2：<br>JAVA_HOME：jdk路径<br>path：%JAVA_HOME%&#x2F;bin</p><p>区别：二者效果对于SE是一样的，在web开发学习大概率会使用的tomcat，他要识别JAVA_HOME，所以一般使用方案2</p><p>补充：以上是jdk1.8的配置，后续可能会使用jdk17，jdk不用自己配置，他会在c盘自己生成javapath，如图：</p><p><img src="/../../images/image-20230912154219213.png" alt="环境变量示例"></p><p>可以看到第一个就是了，此时运行cmd查看jdk版本也是17，如果要使用jdk1.8的话将%JAVA_HOME%&#x2F;bin上移就可以了</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="JDK下载安装"><a href="#JDK下载安装" class="headerlink" title="JDK下载安装"></a>JDK下载安装</h1><ul><li><a href="https://www.123pan.com/s/lgVZVv-njOad.html">jdk8</a></li><li><a href="https://www.123pan.com/s/lgVZVv-njOad.html">jdk17</a></li></ul><h1 id="配置path"><a href="#配置path" class="headerlink" title="配置path"></a>配置path</h1><ul><li><p>jdk8：</p><ol><li><p>只配置path：</p><div class="code-wrapper"><pre><code class="hljs 环境变量路径">jdk安装路径/bin</code></pre></div></li><li><p>通过JAVA_HOME配置环境(推荐，tomcat要识别JAVA_HOME)</p><div class="code-wrapper"><pre><code class="hljs 环境变量路径">JAVA_HOME：jdk安装路径path：%JAVA_HOME%/bin</code></pre></div></li></ol></li><li><p>jdk17：</p><p>​安装好jdk17后不用自己配置，他会在c盘自己生成javapath</p></li></ul><blockquote><p>如果要切换jdk版本，将环境变量上下移动，越往上越优先，当然如果你使用idea可以直接在idea里面配置你要使用的jdk</p></blockquote><h1 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h1><div class="code-wrapper"><pre><code class="hljs shell">java -vjavac -v</code></pre></div>]]></content>
     
     
     
