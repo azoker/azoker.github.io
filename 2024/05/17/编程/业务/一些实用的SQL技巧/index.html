@@ -1,0 +1,673 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/blog/img/fluid.png">
+  <link rel="icon" href="/blog/img/avatar.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="azoker">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="初始化自增值很多时候，例如，我们的表主键，通常设置为自增。但是我们把表清空后，再添加记录会发现自增值竟然不是从 1 开始，而是从之前的记录（哪怕已经被删掉了）开始的，所以我们要再次初始化。 1ALTER TABLE 表名 AUTO_INCREMENT &#x3D; 1  删除和修改记录去除空记录假如有些字段记录是空的，我们不想要，因此需要删除。 1DELETE FROM 表名 WHERE 字段1&#x3D;&amp;#x27">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些实用的SQL技巧">
+<meta property="og:url" content="https://azoker.github.io/blog/2024/05/17/%E7%BC%96%E7%A8%8B/%E4%B8%9A%E5%8A%A1/%E4%B8%80%E4%BA%9B%E5%AE%9E%E7%94%A8%E7%9A%84SQL%E6%8A%80%E5%B7%A7/index.html">
+<meta property="og:site_name" content="Yer Grit">
+<meta property="og:description" content="初始化自增值很多时候，例如，我们的表主键，通常设置为自增。但是我们把表清空后，再添加记录会发现自增值竟然不是从 1 开始，而是从之前的记录（哪怕已经被删掉了）开始的，所以我们要再次初始化。 1ALTER TABLE 表名 AUTO_INCREMENT &#x3D; 1  删除和修改记录去除空记录假如有些字段记录是空的，我们不想要，因此需要删除。 1DELETE FROM 表名 WHERE 字段1&#x3D;&amp;#x27">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-05-17T01:40:26.000Z">
+<meta property="article:modified_time" content="2024-06-19T10:07:51.962Z">
+<meta property="article:author" content="azoker">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="SQL">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>一些实用的SQL技巧 - Yer Grit</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/blog/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/blog/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/blog/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"azoker.github.io","root":"/blog/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/blog/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/blog/js/utils.js" ></script>
+  <script  src="/blog/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/blog/">
+      <strong>azoker-blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/blog/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="一些实用的SQL技巧"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-05-17 09:40" pubdate>
+          2024年5月17日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">一些实用的SQL技巧</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="初始化自增值"><a href="#初始化自增值" class="headerlink" title="初始化自增值"></a>初始化自增值</h1><p>很多时候，例如，我们的表主键，通常设置为自增。但是我们把表清空后，再添加记录会发现自增值竟然不是从 1 开始，而是从之前的记录（哪怕已经被删掉了）开始的，所以我们要再次初始化。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> 表名 AUTO_INCREMENT <span class="hljs-operator">=</span> <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="删除和修改记录"><a href="#删除和修改记录" class="headerlink" title="删除和修改记录"></a>删除和修改记录</h1><h2 id="去除空记录"><a href="#去除空记录" class="headerlink" title="去除空记录"></a>去除空记录</h2><p>假如有些字段记录是空的，我们不想要，因此需要删除。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">DELETE</span> <span class="hljs-keyword">FROM</span> 表名 <span class="hljs-keyword">WHERE</span> 字段<span class="hljs-number">1</span><span class="hljs-operator">=</span><span class="hljs-string">&#x27;&#x27;</span> <span class="hljs-keyword">OR</span> 字段<span class="hljs-number">2</span><span class="hljs-operator">=</span><span class="hljs-string">&#x27;&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h2><p>当然，还有一些重复字段也需要删除。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sql"># 假设表为货物表 goods<br><span class="hljs-keyword">DELETE</span> g1<br><span class="hljs-keyword">FROM</span> goods g1, goods g2<br><span class="hljs-keyword">WHERE</span> g1.id <span class="hljs-operator">&gt;</span> g2.id <span class="hljs-keyword">AND</span> g1.deal_count <span class="hljs-operator">=</span> g2.deal_count <span class="hljs-keyword">AND</span> g1.title <span class="hljs-operator">=</span> g2.title <span class="hljs-keyword">AND</span> g1.shop <span class="hljs-operator">=</span> g2.shop<br></code></pre></td></tr></table></figure>
+
+<h2 id="替换记录的某些字"><a href="#替换记录的某些字" class="headerlink" title="替换记录的某些字"></a>替换记录的某些字</h2><p>比如，1万人，需要把<code>万</code>替换成<code>0000</code>。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"># 假设表为货物表 goods<br><span class="hljs-keyword">UPDATE</span> goods <span class="hljs-keyword">SET</span> deal_count <span class="hljs-operator">=</span> REPLACE(deal_count, <span class="hljs-string">&#x27;万&#x27;</span>, <span class="hljs-string">&#x27;0000&#x27;</span>)<br><span class="hljs-keyword">WHERE</span> deal_count <span class="hljs-keyword">LIKE</span> <span class="hljs-string">&#x27;%万%&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<p>还有，10000人，要把<code>人</code>去掉。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">UPDATE</span> goods <br><span class="hljs-keyword">SET</span> deal <span class="hljs-operator">=</span> <span class="hljs-built_in">CAST</span>(<br>    <span class="hljs-keyword">CASE</span> <br>        <span class="hljs-keyword">WHEN</span> deal_count REGEXP <span class="hljs-string">&#x27;[0-9]++人累计付款&#x27;</span> <span class="hljs-keyword">THEN</span> <br>        	<span class="hljs-built_in">CAST</span>(SUBSTRING_INDEX(deal_count, <span class="hljs-string">&#x27;+&#x27;</span>, <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> SIGNED)<br>        <span class="hljs-keyword">WHEN</span> deal_count REGEXP <span class="hljs-string">&#x27;[0-9]+人累计付款&#x27;</span> <span class="hljs-keyword">THEN</span><br>        	<span class="hljs-built_in">CAST</span>(SUBSTRING_INDEX(deal_count, <span class="hljs-string">&#x27;人累计付款&#x27;</span>, <span class="hljs-number">1</span>) <span class="hljs-keyword">AS</span> SIGNED)<br>        <span class="hljs-keyword">ELSE</span> <span class="hljs-number">0</span><br>    <span class="hljs-keyword">END</span><br><span class="hljs-keyword">AS</span> SIGNED)<br><span class="hljs-keyword">WHERE</span> deal <span class="hljs-keyword">IS</span> <span class="hljs-keyword">NULL</span>;<br></code></pre></td></tr></table></figure>
+
+<p>解释一下，<code>CASE END</code>是条件表达式类似<code>switch</code>，<code>WHEN THEN</code>可以理解为<code>if-else</code>。然后呢，<code>REGEXP</code>关键字用于检查某个字符串是否与指定的正则表达式模式匹配。</p>
+<ol>
+<li><code>[0-9]+</code>：这部分匹配一个或多个数字（0-9之间的任何数字）。</li>
+<li><code>+</code>：这部分在正则表达式中意图匹配文字加号 “+”。</li>
+<li><code>人累计付款</code>：这部分匹配字面字符串“人累计付款”。</li>
+</ol>
+<p><code>CAST()</code> 函数用于将值转换为指定的数据类型，而 <code>SUBSTRING_INDEX()</code> 函数用于从字符串中获取子字符串。</p>
+<ol>
+<li>使用 <code>SUBSTRING_INDEX(deal_count, &#39;+&#39;, 1)</code> 从 <code>deal_count</code> 字段中提取从字符串开始到第一个加号（<code>+</code>）之前的所有字符。例如，如果 <code>deal_count</code> 的值是 <code>&#39;123+人累计付款&#39;</code>，则 <code>SUBSTRING_INDEX(deal_count, &#39;+&#39;, 1)</code> 的结果是 <code>&#39;123&#39;</code>。</li>
+<li>使用 <code>CAST(... AS SIGNED)</code> 将提取出的子字符串转换为有符号整数 SIGNED 。如果子字符串不是一个有效的整数字符串（例如，如果它包含非数字字符），MySQL 会返回一个错误或尝试进行转换但结果可能不是你所期望的。</li>
+</ol>
+<h1 id="新建关联表"><a href="#新建关联表" class="headerlink" title="新建关联表"></a>新建关联表</h1><p>有时我们会遇到需要把一个表的字段抽出来封装成另一张表，例如，我们要把<code>goods</code>表的<code>shop_name</code>单独做成<code>shops</code>表：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> shops (name)<br><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> shop_name <span class="hljs-keyword">FROM</span> goods;<br></code></pre></td></tr></table></figure>
+
+<p><code>shops</code>的<code>id</code>也可以根据<code>goods</code>表生成：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">UPDATE</span> goods<br><span class="hljs-keyword">JOIN</span> shop <span class="hljs-keyword">ON</span> goods.shop_name <span class="hljs-operator">=</span> shop.name<br><span class="hljs-keyword">SET</span> goods.shop_id <span class="hljs-operator">=</span> shop.id;<br></code></pre></td></tr></table></figure>
+
+<h1 id="数据生成"><a href="#数据生成" class="headerlink" title="数据生成"></a>数据生成</h1><p>假如说<code>goods</code>表中我们新增一个字段<code>score</code>，但是没有数据，因此需要我们手动插入：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 更新 shops 表中的 score 字段的值</span><br><span class="hljs-keyword">UPDATE</span> shops<br><span class="hljs-keyword">SET</span> score <span class="hljs-operator">=</span> <br><span class="hljs-keyword">CASE</span> <br>	<span class="hljs-keyword">WHEN</span> RAND() <span class="hljs-operator">&lt;</span> <span class="hljs-number">0.8</span> <span class="hljs-keyword">THEN</span> <span class="hljs-number">4.5</span> <span class="hljs-operator">+</span> (RAND() <span class="hljs-operator">*</span> <span class="hljs-number">0.5</span>) <span class="hljs-comment">-- 80% 的概率生成 4.5 到 5 之间的随机分数</span><br>	<span class="hljs-keyword">ELSE</span> <span class="hljs-number">3</span> <span class="hljs-operator">+</span> (RAND() <span class="hljs-operator">*</span> <span class="hljs-number">1.5</span>) <span class="hljs-comment">-- 其他情况生成 3 到 4.5 之间的随机分数</span><br><span class="hljs-keyword">END</span>;<br></code></pre></td></tr></table></figure>
+
+<p><code>RAND()</code> 生成一个 0 到 1 之间的随机浮点数。精度的话看字段类型。不过呢，我这里的<code>score</code>是<code>float</code>类型的，可能小数点的位数不是预期那样，我想要达到的效果是小数点后 1 位，我们可以这样做：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 修改表结构，将 score 字段的数据类型改为 DECIMAL(3,1)</span><br><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> shops<br>MODIFY <span class="hljs-keyword">COLUMN</span> score <span class="hljs-type">DECIMAL</span>(<span class="hljs-number">3</span>,<span class="hljs-number">1</span>);<br><br><span class="hljs-comment">-- 更新现有数据，保留一位小数</span><br><span class="hljs-keyword">UPDATE</span> shops<br><span class="hljs-keyword">SET</span> score <span class="hljs-operator">=</span> ROUND(score, <span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure>
+
+<p><code>DECIMAL(3,1)</code>是指总长度为3，其中小数点后有1位，这意味着该列可以存储的最大值是<code>99.9</code>。</p>
+<h2 id="生成随机日期"><a href="#生成随机日期" class="headerlink" title="生成随机日期"></a>生成随机日期</h2><p>假设现在要生成一个<code>2022-1-1</code>-<code>2024-6-13</code>的随机日期：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">DATE_ADD(<span class="hljs-string">&#x27;2022-01-01&#x27;</span>, <span class="hljs-type">INTERVAL</span> <span class="hljs-built_in">FLOOR</span>(RAND() <span class="hljs-operator">*</span> (DATEDIFF(<span class="hljs-string">&#x27;2024-06-13&#x27;</span>, <span class="hljs-string">&#x27;2022-01-01&#x27;</span>) <span class="hljs-operator">+</span> <span class="hljs-number">1</span>)) <span class="hljs-keyword">DAY</span>)<br></code></pre></td></tr></table></figure>
+
+<p>这里是这个<code>SQL</code>片段的详细解释：</p>
+<ol>
+<li><code>RAND()</code>: 生成一个0到1之间的随机浮点数。</li>
+<li><code>DATEDIFF(&#39;2024-06-13&#39;, &#39;2022-01-01&#39;)</code>: 计算两个日期之间的天数差，结果为894天（假设闰年和平年都考虑在内）。</li>
+<li><code>RAND() * (DATEDIFF(&#39;2024-06-13&#39;, &#39;2022-01-01&#39;) + 1)</code>: 将随机浮点数乘以天数差加1的结果（即895），这样我们得到一个0到894之间的随机浮点数。</li>
+<li><code>FLOOR(...)</code>: 对上面的结果取整，得到一个0到894之间的随机整数。</li>
+<li><code>DATE_ADD(&#39;2022-01-01&#39;, INTERVAL ... DAY)</code>: 将得到的随机整数天数加到<code>&#39;2022-01-01&#39;</code>上，得到一个随机日期。</li>
+</ol>
+<h2 id="生成随机数"><a href="#生成随机数" class="headerlink" title="生成随机数"></a>生成随机数</h2><p>假设现在要生成<code>100-10000</code>的随机数：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-built_in">FLOOR</span>(<span class="hljs-number">100</span> <span class="hljs-operator">+</span> RAND() <span class="hljs-operator">*</span> (<span class="hljs-number">10000</span> <span class="hljs-operator">-</span> <span class="hljs-number">100</span> <span class="hljs-operator">+</span> <span class="hljs-number">1</span>))<br></code></pre></td></tr></table></figure>
+
+<p>在MySQL中，<code>RAND()</code>函数返回一个0到1之间的随机数（不包括1）。我们通过乘以<code>(10000 - 100 + 1)</code>来扩展这个范围，然后加上100，并使用<code>FLOOR()</code>函数来向下取整。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/blog/categories/%E7%BC%96%E7%A8%8B/" class="category-chain-item">编程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/blog/categories/%E7%BC%96%E7%A8%8B/%E4%B8%9A%E5%8A%A1/" class="category-chain-item">业务</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/blog/tags/Java/" class="print-no-link">#Java</a>
+      
+        <a href="/blog/tags/MySQL/" class="print-no-link">#MySQL</a>
+      
+        <a href="/blog/tags/SQL/" class="print-no-link">#SQL</a>
+      
+    </div>
+  
+</div>
+
+
+              
+
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       by azoker 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/blog/js/events.js" ></script>
+<script  src="/blog/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/blog/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/blog/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/blog/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
