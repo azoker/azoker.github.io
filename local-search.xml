@@ -137,9 +137,9 @@
       
       <tag>Java</tag>
       
-      <tag>MyBatis</tag>
-      
       <tag>框架</tag>
+      
+      <tag>MyBatis</tag>
       
     </tags>
     
@@ -327,9 +327,9 @@
     
     <tags>
       
-      <tag>Vue</tag>
-      
       <tag>前端</tag>
+      
+      <tag>Vue</tag>
       
     </tags>
     
@@ -358,11 +358,11 @@
     
     <tags>
       
-      <tag>BUG</tag>
-      
       <tag>Vue</tag>
       
       <tag>npm</tag>
+      
+      <tag>BUG</tag>
       
     </tags>
     
@@ -837,9 +837,9 @@
       
       <tag>Java</tag>
       
-      <tag>BUG</tag>
-      
       <tag>MyBatis</tag>
+      
+      <tag>BUG</tag>
       
     </tags>
     
