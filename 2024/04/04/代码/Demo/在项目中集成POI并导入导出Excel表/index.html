@@ -22,7 +22,7 @@
     <meta name="description" content="POI入门非常简单，不过仍需要注意一些地方。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在项目中集成POI并导入导出Excel表">
-<meta property="og:url" content="http://azoker.top/public/2024/04/04/%E4%BB%A3%E7%A0%81/Demo/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%9B%86%E6%88%90POI%E5%B9%B6%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BAExcel%E8%A1%A8/index.html">
+<meta property="og:url" content="https://azoker.github.io/2024/04/04/%E4%BB%A3%E7%A0%81/Demo/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%9B%86%E6%88%90POI%E5%B9%B6%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BAExcel%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Yer Grit">
 <meta property="og:description" content="POI入门非常简单，不过仍需要注意一些地方。">
 <meta property="og:locale" content="zh_CN">
@@ -61,33 +61,33 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/public/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/public/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/public/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
 
   
-<link rel="stylesheet" href="/public/css/mac.css">
+<link rel="stylesheet" href="/css/mac.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"azoker.top","root":"/public/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/public/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"azoker.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/public/js/utils.js" ></script>
-  <script  src="/public/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -104,7 +104,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/public/">
+    <a class="navbar-brand" href="/">
       <strong>azoker-blog</strong>
     </a>
 
@@ -123,7 +123,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/" target="_self">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/archives/" target="_self">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/categories/" target="_self">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/tags/" target="_self">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -171,7 +171,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/about/" target="_self">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -288,7 +288,7 @@
 <h1 id="简单导出"><a href="#简单导出" class="headerlink" title="简单导出"></a>简单导出</h1><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> org.apache.poi.xssf.usermodel.XSSFRow;<br><span class="hljs-keyword">import</span> org.apache.poi.xssf.usermodel.XSSFSheet;<br><span class="hljs-keyword">import</span> org.apache.poi.xssf.usermodel.XSSFWorkbook;<br><br><span class="hljs-keyword">import</span> java.io.File;<br><span class="hljs-keyword">import</span> java.io.FileOutputStream;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">PoiTest</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception &#123;<br><br>        write();<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 通过poi创建一个excel文件，并写入数据</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">write</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception &#123;<br><br>        <span class="hljs-comment">//在内存中，创建一个excel文件</span><br>        <span class="hljs-type">XSSFWorkbook</span> <span class="hljs-variable">excel</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">XSSFWorkbook</span>();<br><br>        <span class="hljs-comment">//在excel文件中创建sheet页</span><br>        <span class="hljs-type">XSSFSheet</span> <span class="hljs-variable">sheet</span> <span class="hljs-operator">=</span> excel.createSheet(<span class="hljs-string">&quot;第一页&quot;</span>);<br><br>        <span class="hljs-comment">//在sheet页中创建行，rownum编号从0开始</span><br>        <span class="hljs-type">XSSFRow</span> <span class="hljs-variable">row</span> <span class="hljs-operator">=</span> sheet.createRow(<span class="hljs-number">0</span>);<br><br>        <span class="hljs-comment">//创建单元格，并将数据写入单元格</span><br>        row.createCell(<span class="hljs-number">0</span>).setCellValue(<span class="hljs-string">&quot;姓名&quot;</span>);<br>        row.createCell(<span class="hljs-number">1</span>).setCellValue(<span class="hljs-string">&quot;城市&quot;</span>);<br><br>        <span class="hljs-comment">//创建新行</span><br>        row = sheet.createRow(<span class="hljs-number">1</span>);<br>        row.createCell(<span class="hljs-number">0</span>).setCellValue(<span class="hljs-string">&quot;张三&quot;</span>);<br>        row.createCell(<span class="hljs-number">1</span>).setCellValue(<span class="hljs-string">&quot;北京&quot;</span>);<br><br>        <span class="hljs-comment">//再创建新行</span><br>        row = sheet.createRow(<span class="hljs-number">2</span>);<br>        row.createCell(<span class="hljs-number">0</span>).setCellValue(<span class="hljs-string">&quot;李四&quot;</span>);<br>        row.createCell(<span class="hljs-number">1</span>).setCellValue(<span class="hljs-string">&quot;南京&quot;</span>);<br><br>        <span class="hljs-comment">//创建输出流对象，将内存中的excel写入到磁盘</span><br>        <span class="hljs-type">FileOutputStream</span> <span class="hljs-variable">outputStream</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">FileOutputStream</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:\\info.xlsx&quot;</span>));<br>        excel.write(outputStream);<br><br>        <span class="hljs-comment">//关闭资源</span><br>        outputStream.close();<br>        excel.close();<br><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></div>
 
 <p>可以看到下面这张图：</p>
-<p><img src="https://azoker-pic-1314718810.cos.ap-chengdu.myqcloud.com/mind/poi%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E8%AF%B4%E6%98%8E.png" srcset="/public/img/loading.gif" lazyload alt="数据导出说明"></p>
+<p><img src="https://azoker-pic-1314718810.cos.ap-chengdu.myqcloud.com/mind/poi%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E8%AF%B4%E6%98%8E.png" srcset="/img/loading.gif" lazyload alt="数据导出说明"></p>
 <p><strong>需要说明的是，如果单元格存在数据，那么会直接覆盖掉。</strong></p>
 <h1 id="简单导入"><a href="#简单导入" class="headerlink" title="简单导入"></a>简单导入</h1><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">read</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception &#123;<br><br>    <span class="hljs-comment">//获取输入流对象</span><br>    <span class="hljs-type">FileInputStream</span> <span class="hljs-variable">fileInputStream</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">FileInputStream</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>(<span class="hljs-string">&quot;D:\\info.xlsx&quot;</span>));<br><br>    <span class="hljs-comment">//创建excel对象，读取excel文件</span><br>    <span class="hljs-type">XSSFWorkbook</span> <span class="hljs-variable">excel</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">XSSFWorkbook</span>(fileInputStream);<br><br>    <span class="hljs-comment">//读取excel文件中第一个sheet页</span><br>    <span class="hljs-type">XSSFSheet</span> <span class="hljs-variable">sheetAt</span> <span class="hljs-operator">=</span> excel.getSheetAt(<span class="hljs-number">0</span>);<br><br>    <span class="hljs-comment">//获取excel中数据最后一行的行号</span><br>    <span class="hljs-type">int</span> <span class="hljs-variable">lastRowNum</span> <span class="hljs-operator">=</span> sheetAt.getLastRowNum();<br><br>    <span class="hljs-comment">//从第二行开始读</span><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>; i &lt;= lastRowNum; i++) &#123;<br>        <span class="hljs-comment">//获得某一行数据</span><br>        <span class="hljs-type">XSSFRow</span> <span class="hljs-variable">row</span> <span class="hljs-operator">=</span> sheetAt.getRow(i);<br>        <span class="hljs-comment">//获得第二个单元格对象</span><br>        <span class="hljs-type">String</span> <span class="hljs-variable">cellValue1</span> <span class="hljs-operator">=</span> row.getCell(<span class="hljs-number">0</span>).getStringCellValue();<br>        <span class="hljs-comment">//获得第三个单元格对象</span><br>        <span class="hljs-type">String</span> <span class="hljs-variable">cellValue2</span> <span class="hljs-operator">=</span> row.getCell(<span class="hljs-number">1</span>).getStringCellValue();<br>        <span class="hljs-comment">//打印数据</span><br>        System.out.println(cellValue1 + <span class="hljs-string">&quot;  &quot;</span> + cellValue2);<br>    &#125;<br><br>    <span class="hljs-comment">//关闭资源</span><br>    fileInputStream.close();<br>    excel.close();<br>&#125;<br></code></pre></td></tr></table></figure></div>
 
@@ -311,12 +311,12 @@
     
       <span class="category-chain">
         
-  <a href="/public/categories/%E4%BB%A3%E7%A0%81/" class="category-chain-item">代码</a>
+  <a href="/categories/%E4%BB%A3%E7%A0%81/" class="category-chain-item">代码</a>
   
   
     <span>></span>
     
-  <a href="/public/categories/%E4%BB%A3%E7%A0%81/Demo/" class="category-chain-item">Demo</a>
+  <a href="/categories/%E4%BB%A3%E7%A0%81/Demo/" class="category-chain-item">Demo</a>
   
   
 
@@ -333,9 +333,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/public/tags/Java/" class="print-no-link">#Java</a>
+        <a href="/tags/Java/" class="print-no-link">#Java</a>
       
-        <a href="/public/tags/POI/" class="print-no-link">#POI</a>
+        <a href="/tags/POI/" class="print-no-link">#POI</a>
       
     </div>
   
@@ -463,8 +463,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/public/js/events.js" ></script>
-<script  src="/public/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -486,7 +486,7 @@
 
 
   
-    <script  src="/public/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -583,7 +583,7 @@
 </script>
 
 
-  <script  src="/public/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -591,7 +591,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/public/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   

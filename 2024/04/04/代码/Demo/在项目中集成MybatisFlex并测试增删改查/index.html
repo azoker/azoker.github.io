@@ -22,7 +22,7 @@
     <meta name="description" content="我现在测试的是单表的增删改查，只能说算是入门，可以复制粘贴代码了解一下流程，更加复杂的操作其实官网已经非常详细，但是仍有一些地方需要注意。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在项目中集成MybatisFlex并测试增删改查">
-<meta property="og:url" content="http://azoker.top/public/2024/04/04/%E4%BB%A3%E7%A0%81/Demo/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%9B%86%E6%88%90MybatisFlex%E5%B9%B6%E6%B5%8B%E8%AF%95%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/index.html">
+<meta property="og:url" content="https://azoker.github.io/2024/04/04/%E4%BB%A3%E7%A0%81/Demo/%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E9%9B%86%E6%88%90MybatisFlex%E5%B9%B6%E6%B5%8B%E8%AF%95%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5/index.html">
 <meta property="og:site_name" content="Yer Grit">
 <meta property="og:description" content="我现在测试的是单表的增删改查，只能说算是入门，可以复制粘贴代码了解一下流程，更加复杂的操作其实官网已经非常详细，但是仍有一些地方需要注意。">
 <meta property="og:locale" content="zh_CN">
@@ -61,33 +61,33 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/public/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/public/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/public/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
 
   
-<link rel="stylesheet" href="/public/css/mac.css">
+<link rel="stylesheet" href="/css/mac.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"azoker.top","root":"/public/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/public/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"azoker.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/public/js/utils.js" ></script>
-  <script  src="/public/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -104,7 +104,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/public/">
+    <a class="navbar-brand" href="/">
       <strong>azoker-blog</strong>
     </a>
 
@@ -123,7 +123,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/" target="_self">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/archives/" target="_self">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/categories/" target="_self">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/tags/" target="_self">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -171,7 +171,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/public/about/" target="_self">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -309,7 +309,7 @@
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">QueryWrapper</span> <span class="hljs-variable">query</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">QueryWrapper</span>();<br>query.where(USER.ID.gt(id));<br></code></pre></td></tr></table></figure></div>
 
 <p>这个<code>USER.ID</code>就是表字段，这是Flex自己生成的，类似于Lombok的原理。那么具体怎么做呢？只需要构建项目就好了，一些版本的Flex会自动生成<code>target</code>文件，就想下面这样：</p>
-<p><img src="https://azoker-pic-1314718810.cos.ap-chengdu.myqcloud.com/other/20240816144559.png" srcset="/public/img/loading.gif" lazyload></p>
+<p><img src="https://azoker-pic-1314718810.cos.ap-chengdu.myqcloud.com/other/20240816144559.png" srcset="/img/loading.gif" lazyload></p>
 <p>当然有的版本不会，需要手动开启。在项目根目录下新建<code>mybatis-flex.config</code>文件，内容如下：<code>processor.allInTables.enable=true</code>，再去构建项目。</p>
 <p>如果不想使用<code>USER.ID</code>，就像下面这样也行：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVA"><figure class="iseeu highlight /java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">QueryWrapper</span> <span class="hljs-variable">query</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">QueryWrapper</span>();<br>query.where(<span class="hljs-string">&quot;id &gt; ?&quot;</span>, id);<br></code></pre></td></tr></table></figure></div>
@@ -341,12 +341,12 @@
     
       <span class="category-chain">
         
-  <a href="/public/categories/%E4%BB%A3%E7%A0%81/" class="category-chain-item">代码</a>
+  <a href="/categories/%E4%BB%A3%E7%A0%81/" class="category-chain-item">代码</a>
   
   
     <span>></span>
     
-  <a href="/public/categories/%E4%BB%A3%E7%A0%81/Demo/" class="category-chain-item">Demo</a>
+  <a href="/categories/%E4%BB%A3%E7%A0%81/Demo/" class="category-chain-item">Demo</a>
   
   
 
@@ -363,9 +363,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/public/tags/Java/" class="print-no-link">#Java</a>
+        <a href="/tags/Java/" class="print-no-link">#Java</a>
       
-        <a href="/public/tags/Mybatis/" class="print-no-link">#Mybatis</a>
+        <a href="/tags/Mybatis/" class="print-no-link">#Mybatis</a>
       
     </div>
   
@@ -493,8 +493,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/public/js/events.js" ></script>
-<script  src="/public/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -516,7 +516,7 @@
 
 
   
-    <script  src="/public/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -613,7 +613,7 @@
 </script>
 
 
-  <script  src="/public/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -621,7 +621,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/public/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   
